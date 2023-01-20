@@ -32,25 +32,30 @@ _UI_ architecture has been decided as [React on NextJS](https://beta.nextjs.org/
 As of commit, the [Spotify Web API](https://developer.spotify.com/documentation/web-api/reference/#/) will be the sole API provide for _In Search of Mood_, since all interface will rely on Spotify [user profile data](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-current-users-profile), [track data](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-track), and [playlist data](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-playlist).
 
 ### Actors
-All _Actors_ will fit into category of _unauthentiated_ (_visitor_, interchangeably) or _authenticated_ (_user_, interchangeably) user. Both terms 'authenticated' and 'unauthenticated', plus their variants in this Use Case document, will refer to the actor's status against the [Spotify authorization framework](https://developer.spotify.com/documentation/general/guides/authorization/).
+All _Actors_ will fit into category of _unauthorized_ (_visitor_, interchangeably) or _authorized_ (_user_, interchangeably) user. Both terms 'authorized' and 'unauthorized', plus their variants in this Use Case document, will refer to the actor's status against the [Spotify authorization framework](https://developer.spotify.com/documentation/general/guides/authorization/).
 
 ## UI
-<!-- | # | s | s | a | -->
+<!-- | 3 | T | R | S | -->
 ### Use Cases
 
-| Req # | Actor | Req | Status |
---- | --- | --- | ---|
-|  | **Unauthenticated User** | | |
-| U-1 | Unauthorized user | Upon visit, system should display default UI with brand color and standard chrome and empty state | open |
-| U-2 | Unauthorized user | Upon visit, system should prompt user to authorize against Spotify Auth | open |
-| | **User Actively Authenticating** | | |
-| Z-1 | Authorizing User* | Upon unsuccessful Spotify Authorization, system should retain authorization prompt and present Spotify response messagin, if any  | open |
-| | **Authenticated User** | | |
-| A-1 | Authorizing User* | Upon successful Spotify Authorization, system should remove authorization prompt | open |
-### Test Cases
-
-## Service
-
-### Tech Cases
-
-### Test Cases
+| M | Title | Req | Status | Labels |
+--- | ----- | --- | ------ | ------ |
+| 1 |       | **Unauthorized User** | | |
+| 1 | Create visitor view | Upon visit, system should display default UI with brand color and standard chrome and empty state | open | feat |
+| 1 | Prompt for authorization | Upon visit, system should prompt user to authorize against Spotify Auth | open | feat |
+| 2 |       | **User Actively Authorizing** | | |
+| 2 | AuthZ failure | Upon unsuccessful Spotify Authorization, system should retain authorization prompt and present Spotify response messaging, if any  | open | feat |
+| 2 | AuthZ success | Upon successful Spotify Authorization, system should remove authorization prompt | open | feat |
+| 3 |       | **Authorized User** | | |
+| 3 | Create user view | _Default view_: System should present default layout, design, branding, and introductory content, in a 'Hello World' state | open | feat |
+| 3 | Create operation panel | System should present operation content panel; defaults to list of user playlists. Presents empty state when user has no playlists. | open | feat |
+| 3 | Create track search panel | System should present search operation panel; defaults to empty search results with simple search input and 'go' button | open | feat |
+| 3 | State-highlighted playlist | When user selects a playlist in the operation panel, the playlist stays highlighted until user selects a different playlist. Playlist selection is mutually exclusive. Re-selecting the same playlist will deselect, resulting in no selected playlist. | open | feat |
+| 3 | 'Add track' CTA display | When system displays tracks in track search list panel, track item should include a CTA to add track to selected playlist. If no playlist is selected then CTA should not respond. | open | feat |
+| 3 | Visual connection between track and playlist | Similar to [SVG path between two elements](https://www.cssscript.com/draw-svg-paths-two-elements-leader-line/), system should present a purposeful but stunning connection between highlighted track and selected playlist. If no playlist is selected then no connection should be indicated. | open | feat |
+| 3 | Add track to playlist | When user has selected a playlist in the operation panel, and when the user search results display tracks matching criteria, and when the user highlights a track, and when the user activates the 'Add track' CTA, system should append the track to the selected playlist. | open | feat |
+| 3 |  |  | open | feat |
+| 4 |       | **Future state** |  | |
+| 4 | Batch track | Batch holding area for many tracks, where user may manually arrange tracks | open | feat |
+|   |       | **Foundation** |  | |
+|   | Search operations design | System design for search and filter panel | open | chore |
