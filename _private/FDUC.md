@@ -35,9 +35,18 @@ As of commit, the [Spotify Web API](https://developer.spotify.com/documentation/
 All _Actors_ will fit into category of _unauthentiated_ (_visitor_, interchangeably) or _authenticated_ (_user_, interchangeably) user. Both terms 'authenticated' and 'unauthenticated', plus their variants in this Use Case document, will refer to the actor's status against the [Spotify authorization framework](https://developer.spotify.com/documentation/general/guides/authorization/).
 
 ## UI
-
+<!-- | # | s | s | a | -->
 ### Use Cases
 
+| Req # | Actor | Req | Status |
+--- | --- | --- | ---|
+|  | **Unauthenticated User** | | |
+| U-1 | Unauthorized user | Upon visit, system should display default UI with brand color and standard chrome and empty state | open |
+| U-2 | Unauthorized user | Upon visit, system should prompt user to authorize against Spotify Auth | open |
+| | **User Actively Authenticating** | | |
+| Z-1 | Authorizing User* | Upon unsuccessful Spotify Authorization, system should retain authorization prompt and present Spotify response messagin, if any  | open |
+| | **Authenticated User** | | |
+| A-1 | Authorizing User* | Upon successful Spotify Authorization, system should remove authorization prompt | open |
 ### Test Cases
 
 ## Service
