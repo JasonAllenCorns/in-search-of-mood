@@ -2,8 +2,8 @@
 import React from "react";
 import Image from 'next/image';
 import Layout from '@/components/app_layout';
-import Switch from "@mui/material/Switch";
 import { authOptions } from '@/pages/api/auth/[...nextauth]';
+import Switch from "@mui/material/Switch";
 import { useSession} from "next-auth/react"
 
 import { getServerSession } from 'next-auth/next';

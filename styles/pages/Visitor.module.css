@@ -1,0 +1,38 @@
+
+.heroBlock {
+  position: relative;
+  height: var(--tronHeight);
+}
+.jumboTron {
+  height: var(--tronHeight);
+  width: var(--tronWidth);
+  padding: 15px 10% 15px;
+  overflow-y: hidden;
+  backdrop-filter: blur(2px);
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.jumboTron.passThrough {
+  background: transparent;
+}
+.heroMedia {
+  object-fit: cover;
+  height: 100%;
+}
+.videoTron {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: hidden;
+  z-index: -1;
+}
+.providerLogin {
+  border-radius: 100px;
+}
+.providerLogin img {
+  max-height: 24px;
+  display: inline-block;
+  margin-left: 6px;
+}

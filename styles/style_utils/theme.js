@@ -1,84 +1,44 @@
 import { createTheme } from "@mui/material/styles";
+import grey from "@mui/material/colors/grey"
+import cyan from "@mui/material/colors/cyan"
 
+
+export const common = {
+};
+
+export const dark = {
+};
+
+export const light = {
+};
 
 export const theme = createTheme({
   palette: {
     primary: {
-      main: "#212C39",
-      sdkf: "#7297C4",
-      asldif: "#4D6685",
-      lasifd: "#283545",
-      asdfds: "#1E2733"
+      main: "#212C39"
+    },
+    secondary: {
+      main: ""
+    },
+    text: {
+      primary: common.brandWhite
     }
   }
-})
-export const common = {
-  white: '#fff',
-  black: '#000'
-}
+});
 
-export const dark = {
-  text: {
-    primary: common.white,
-    secondary: 'rgba(255, 255, 255, 0.7)',
-    disabled: 'rgba(255, 255, 255, 0.5)',
-    icon: 'rgba(255, 255, 255, 0.5)'
-  },
-  divider: 'rgba(255, 255, 255, 0.12)',
-  background: {
-    paper: '#121212',
-    default: '#121212'
-  },
-  action: {
-    active: common.white,
-    hover: 'rgba(255, 255, 255, 0.08)',
-    hoverOpacity: 0.08,
-    selected: 'rgba(255, 255, 255, 0.16)',
-    selectedOpacity: 0.16,
-    disabled: 'rgba(255, 255, 255, 0.3)',
-    disabledBackground: 'rgba(255, 255, 255, 0.12)',
-    disabledOpacity: 0.38,
-    focus: 'rgba(255, 255, 255, 0.12)',
-    focusOpacity: 0.12,
-    activatedOpacity: 0.24
-  }
-};
 
-export const light = {
-  // The colors used to style the text.
-  text: {
-    // The most important text.
-    primary: 'rgba(0, 0, 0, 0.87)',
-    // Secondary text.
-    secondary: 'rgba(0, 0, 0, 0.6)',
-    // Disabled text have even lower visual prominence.
-    disabled: 'rgba(0, 0, 0, 0.38)'
-  },
-  // The color used to divide different elements.
-  divider: 'rgba(0, 0, 0, 0.12)',
-  // The background colors used to style the surfaces.
-  // Consistency between these values is important.
-  background: {
-    paper: common.white,
-    default: common.white
-  },
-  // The colors used to style the action elements.
-  action: {
-    // The color of an active action like an icon button.
-    active: 'rgba(0, 0, 0, 0.54)',
-    // The color of an hovered action.
-    hover: 'rgba(0, 0, 0, 0.04)',
-    hoverOpacity: 0.04,
-    // The color of a selected action.
-    selected: 'rgba(0, 0, 0, 0.08)',
-    selectedOpacity: 0.08,
-    // The color of a disabled action.
-    disabled: 'rgba(0, 0, 0, 0.26)',
-    // The background color of a disabled action.
-    disabledBackground: 'rgba(0, 0, 0, 0.12)',
-    disabledOpacity: 0.38,
-    focus: 'rgba(0, 0, 0, 0.12)',
-    focusOpacity: 0.12,
-    activatedOpacity: 0.12
-  }
-};
+// common: CommonColors;
+// mode: PaletteMode;
+// contrastThreshold: number;
+// tonalOffset: PaletteTonalOffset;
+// primary: PaletteColor;
+// secondary: PaletteColor;
+// error: PaletteColor;
+// warning: PaletteColor;
+// info: PaletteColor;
+// success: PaletteColor;
+// grey: Color;
+// text: TypeText;
+// divider: TypeDivider;
+// action: TypeAction;
+// background: TypeBackground;

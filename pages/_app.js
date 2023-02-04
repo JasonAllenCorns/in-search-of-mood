@@ -1,24 +1,20 @@
 import "../styles/globals.css"
-import { ThemeProvider } from "@mui/material"
-import { CacheProvider } from "@emotion/react"
-import { theme } from "@/styles/style_utils/theme"
-import createEmotionCache from "@/styles/style_utils/EmotionCache"
+// import { ThemeProvider } from "@mui/material"
+// import { CacheProvider } from "@emotion/react"
+// import { theme } from "@/styles/style_utils/theme"
+// import createEmotionCache from "@/styles/style_utils/EmotionCache"
 import { SessionProvider } from "next-auth/react"
 
-const clientSideEmotionCache = createEmotionCache()
+// const clientSideEmotionCache = createEmotionCache()
 
 export default function App({ 
   Component,
-  emotionCache = clientSideEmotionCache,
+  // emotionCache = clientSideEmotionCache,
   pageProps: {session, ...pageProps} }) {
   const getLayout = Component.getLayout || ((page) => page)
   return getLayout(
     <SessionProvider session={session}>
-      <CacheProvider value={emotionCache}>
-        <ThemeProvider theme={theme}>
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </CacheProvider>
+      <Component {...pageProps} />
     </SessionProvider>
   )
 }
