@@ -1,16 +1,10 @@
 import { createTheme } from "@mui/material/styles";
-import grey from "@mui/material/colors/grey"
-import cyan from "@mui/material/colors/cyan"
 
 
 export const common = {
+  brandWhite: "#f2fff3",
 };
 
-export const dark = {
-};
-
-export const light = {
-};
 
 export const theme = createTheme({
   palette: {
@@ -18,11 +12,13 @@ export const theme = createTheme({
       main: "#212C39"
     },
     secondary: {
-      main: ""
+      main: "#8FBE81"
     },
     text: {
       primary: common.brandWhite
-    }
+    },
+    contrastThreshold: 3,
+    tonalOffset: 0.2,
   }
 });
 

@@ -15,11 +15,11 @@ import { signIn } from "next-auth/react"
 
 import styles from "@/styles/pages/Visitor.module.css"
 
-export default function Home() {
-
+export default function Home(props) {
+  const { callbackUrl } = props;
   const handleClick = () => {
     console.log("a click was handled");
-    return signIn();
+    return signIn("spotify", { callbackUrl });
   }
   // import { useState, useEffect } from "react"
   // const [content, setContent] = useState()
@@ -79,6 +79,7 @@ export async function getServerSideProps(context) {
   if (!session) {
     return {
       props: {
+        callbackUrl: process.env.SPOTIFY_REDIRECT_CB_URI
       },
     }
   }
