@@ -5,7 +5,6 @@ export const common = {
   brandWhite: "#f2fff3",
 };
 
-
 export const theme = createTheme({
   palette: {
     primary: {
@@ -15,7 +14,10 @@ export const theme = createTheme({
       main: "#8FBE81"
     },
     text: {
-      primary: common.brandWhite
+      main: common.brandWhite
+    },
+    accent: {
+      main: common.brandWhite
     },
     contrastThreshold: 3,
     tonalOffset: 0.2,
