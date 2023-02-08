@@ -1,6 +1,7 @@
 // import Header from "./header"
 // import Footer from "./footer"
 import Head from 'next/head'
+import styles from "@/styles/components/AppLayout.module.css"
 
 export default function Layout(props) {
   return (
@@ -11,9 +12,7 @@ export default function Layout(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h4>This is a custom layout</h4>
       <main>{props.children}</main>
-      
     </>
   )
 }
