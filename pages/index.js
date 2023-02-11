@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import { getServerSession } from 'next-auth/next';
-import { authOptions } from './api/auth/[...nextauth]';
+import { authOptions } from '@/pages/api/auth/[...nextauth]';
 import { signIn } from 'next-auth/react';
 
 import styles from '@/styles/pages/Visitor.module.css';
