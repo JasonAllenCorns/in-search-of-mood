@@ -1,16 +1,12 @@
-import { Box } from "@mui/material";
+import { Box } from '@mui/material';
 
-export default function FilterableViewContainer (props) {
+export default function FilterableViewContainer(props) {
   const { children } = props;
   return (
     <>
-      <Box
-        component={"form"}
-        autoComplete="false"
-        autoCapitalize="false"
-      >
+      <Box component={'form'} autoComplete="false" autoCapitalize="false">
         {children}
       </Box>
     </>
-  )
+  );
 }

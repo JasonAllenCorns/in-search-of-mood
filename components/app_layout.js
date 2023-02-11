@@ -1,7 +1,7 @@
 // import Header from "./header"
 // import Footer from "./footer"
-import Head from 'next/head'
-import styles from "@/styles/components/AppLayout.module.css"
+import Head from 'next/head';
+import styles from '@/styles/components/AppLayout.module.css';
 
 export default function Layout(props) {
   return (
@@ -14,5 +14,5 @@ export default function Layout(props) {
       </Head>
       <main>{props.children}</main>
     </>
-  )
+  );
 }
