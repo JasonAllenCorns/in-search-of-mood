@@ -59,6 +59,9 @@ export async function getServerSideProps(context) {
   // While the unauthenticated user will get bounced to the signin page, identified in configs OR 
   // next-auth defaults, the auth'd user will still get access to this, the 'signin' page.
   // Options are to use an auth'd view switcher or duplicate the redirect and session logic, here.
+  // NOTE, 2: "Here" is a better handler than a client-side "useRouter().push('/dashboard')" because 
+  // this SSR redirect won't give a flash of content.
+  //
   // Here's plan B:
 
   if (!session) {
@@ -70,7 +73,7 @@ export async function getServerSideProps(context) {
   }
   return {
     redirect: {
-      destination: "/app",
+      destination: "/dashboard",
       permanent: false
     }
   }
