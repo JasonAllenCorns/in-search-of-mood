@@ -1,4 +1,4 @@
-export default function UserHome(props) {
+export default function UserHome() {
   return <h1>Hello World</h1>;
 }
 

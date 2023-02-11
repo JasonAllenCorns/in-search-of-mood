@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -8,6 +8,7 @@ import { authOptions } from './api/auth/[...nextauth]';
 import { signIn } from 'next-auth/react';
 
 import styles from '@/styles/pages/Visitor.module.css';
+import Image from 'next/image';
 
 export default function Home(props) {
   const { callbackUrl } = props;
@@ -24,7 +25,7 @@ export default function Home(props) {
         </Card>
         <Box className={`${styles.jumboTron} ${styles.passThrough}`} elevation={2} sx={{ mx: 'auto', width: 220 }}>
           <Button color="inherit" variant="contained" className={styles.providerLogin} onClick={handleClick}>
-            Sign in with <img src="/media/spotify_logo.png" />
+            Sign in with <Image width={80} height={24} src="/media/spotify_logo.png" alt="Spotify radiant sound logo and branded name." />
           </Button>
         </Box>
       </div>

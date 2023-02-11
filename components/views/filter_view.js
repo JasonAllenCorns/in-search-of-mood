@@ -1,8 +1,7 @@
 import { SearchRounded } from '@mui/icons-material';
 import { Box, IconButton, TextField } from '@mui/material';
 
-export default function FilterView(props) {
-  const { children } = props;
+export default function FilterView() {
   return (
     <>
       <Box>

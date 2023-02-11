@@ -1,5 +1,5 @@
-import { Badge, Box, Button, Paper } from '@mui/material';
-import LogoutRounded from '@mui/icons-material/LogoutRounded';
+import { Badge, Box, Paper } from '@mui/material';
+// import LogoutRounded from '@mui/icons-material/LogoutRounded';
 import FeaturedPlayListIcon from '@mui/icons-material/FeaturedPlayList';
 import Image from 'next/image';
 
