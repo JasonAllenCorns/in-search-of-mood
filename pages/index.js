@@ -55,6 +55,11 @@ export default function Home(props) {
 // Export the `session` prop to use sessions with Server Side Rendering
 export async function getServerSideProps(context) {
   const session = await getServerSession(context.req, context.res, authOptions)
+  // NOTE: as of Feb, '23, the next-auth middelware does not allow _authenticated_ redirect
+  // While the unauthenticated user will get bounced to the signin page, identified in configs OR 
+  // next-auth defaults, the auth'd user will still get access to this, the 'signin' page.
+  // Options are to use an auth'd view switcher or duplicate the redirect and session logic, here.
+  // Here's plan B:
 
   if (!session) {
     return {

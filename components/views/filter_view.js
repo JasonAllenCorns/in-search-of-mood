@@ -1,11 +1,7 @@
 import { SearchRounded } from "@mui/icons-material";
 import {
   Box,
-  FormControl,
   IconButton,
-  InputBase,
-  InputLabel,
-  OutlinedInput,
   TextField,
 } from "@mui/material";
 
@@ -27,9 +23,6 @@ export default function FilterView(props) {
               )
             }}
           />
-        {/* <TextField>
-          <InputBase></InputBase>
-        </TextField> */}
       </Box>
     </>
   );

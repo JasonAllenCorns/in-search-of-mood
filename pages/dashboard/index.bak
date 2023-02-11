@@ -36,6 +36,7 @@ import FilterView from "@/components/views/filter_view";
 var SpotifyWebApi = require("spotify-web-api-node");
 
 const [boxWidth, boxHeight] = ["160px", "160px"];
+
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   color: theme.palette.text.secondary,
