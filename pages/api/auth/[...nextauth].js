@@ -1,7 +1,7 @@
 import NextAuth from "next-auth";
 import SpotifyProvider from "next-auth/providers/spotify";
 
-const scope = "playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public"
+const scope = " user-read-private playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public user-top-read"
 
 
   // "user-top-read playlist-read-private user-read-email user-read-private playlist-read-collaborative";
@@ -17,12 +17,15 @@ const authOptions ={
     }),
   ],
   callbacks: {
-    async jwt({ token, account }) {
+    async jwt({ token, account, profile }) {
       if (account) {
         token.id = account.id;
         token.expires_at = account.expires_at;
         token.access_token = account.access_token;
         token.refresh_token = account.refresh_token;
+      }
+      if (profile) {
+        token.country = profile?.country || 'US';
       }
       return token;
     },
