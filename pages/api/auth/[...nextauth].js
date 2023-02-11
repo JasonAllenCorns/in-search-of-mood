@@ -5,7 +5,7 @@ const scope = ' user-read-private playlist-read-private playlist-read-collaborat
 
 // "user-top-read playlist-read-private user-read-email user-read-private playlist-read-collaborative";
 
-const authOptions = {
+export const authOptions = {
   providers: [
     SpotifyProvider({
       clientId: process.env.SPOTIFY_CLIENT_ID,
