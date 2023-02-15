@@ -33,7 +33,6 @@ import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import FilterableViewContainer from "@/components/views/filterable_view_container";
 import FilterView from "@/components/views/filter_view";
 
-var SpotifyWebApi = require("spotify-web-api-node");
 
 const [boxWidth, boxHeight] = ["160px", "160px"];
 
@@ -230,6 +229,7 @@ export default function UserHome(props) {
 
 // Export the `session` prop to use sessions with Server Side Rendering
 export const getServerSideProps = async (context) => {
+  var SpotifyWebApi = require("spotify-web-api-node");
   const { req, res } = context;
   const session = await getServerSession(req, res, authOptions);
 
