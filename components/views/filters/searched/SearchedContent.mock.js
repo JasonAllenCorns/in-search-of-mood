@@ -2,7 +2,8 @@ const base = {
   playlistSearchResults: [
     {
       collaborative: false,
-      description: "<a href=spotify:playlist:37i9dQZF1EIUUcvIysjuWU>Mötley Crüe</a>, <a href=spotify:playlist:37i9dQZF1EIYNdvL7KIKmv>Sammy Hagar</a>, <a href=spotify:playlist:37i9dQZF1EIUJTGPtK0muv>Guns N' Roses</a> and more",
+      description:
+        "<a href=spotify:playlist:37i9dQZF1EIUUcvIysjuWU>Mötley Crüe</a>, <a href=spotify:playlist:37i9dQZF1EIYNdvL7KIKmv>Sammy Hagar</a>, <a href=spotify:playlist:37i9dQZF1EIUJTGPtK0muv>Guns N' Roses</a> and more",
       external_urls: {
         spotify: 'https://open.spotify.com/playlist/37i9dQZF1EIWMVrLAqdGXR',
       },
@@ -26,7 +27,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MTY3NjIzODMzNSwwMDAwMDAwMDFiNGUxOWFlNGJiNGRkOGIxMjg3MzI2Y2YwYzFjNzNl',
+      snapshot_id:
+        'MTY3NjIzODMzNSwwMDAwMDAwMDFiNGUxOWFlNGJiNGRkOGIxMjg3MzI2Y2YwYzFjNzNl',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/37i9dQZF1EIWMVrLAqdGXR/tracks',
         total: 50,
@@ -36,7 +38,8 @@ const base = {
     },
     {
       collaborative: false,
-      description: '<a href=spotify:playlist:37i9dQZF1EIZg41pwKO8Dz>Judas Priest</a>, <a href=spotify:playlist:37i9dQZF1EIY9cVGruPODT>Five Finger Death Punch</a>, <a href=spotify:playlist:37i9dQZF1EIZoNYWgvuEcy>Amaranthe</a> and more',
+      description:
+        '<a href=spotify:playlist:37i9dQZF1EIZg41pwKO8Dz>Judas Priest</a>, <a href=spotify:playlist:37i9dQZF1EIY9cVGruPODT>Five Finger Death Punch</a>, <a href=spotify:playlist:37i9dQZF1EIZoNYWgvuEcy>Amaranthe</a> and more',
       external_urls: {
         spotify: 'https://open.spotify.com/playlist/37i9dQZF1EQpgT26jgbgRI',
       },
@@ -60,7 +63,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MTY3NjE4MTYwMCwwMDAwMDAwMDU1Zjk0NDU3ZGJiODczNzRiNDZiNjZmZjRjYzExMTE5',
+      snapshot_id:
+        'MTY3NjE4MTYwMCwwMDAwMDAwMDU1Zjk0NDU3ZGJiODczNzRiNDZiNjZmZjRjYzExMTE5',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/37i9dQZF1EQpgT26jgbgRI/tracks',
         total: 50,
@@ -70,7 +74,8 @@ const base = {
     },
     {
       collaborative: false,
-      description: '<a href=spotify:playlist:37i9dQZF1EIXQzODTgQBfd>Kenny Wayne Shepherd</a>, <a href=spotify:playlist:37i9dQZF1EIYwzo1whSdbq>Black Pistol Fire</a>, <a href=spotify:playlist:37i9dQZF1EIWS9TPMaOUkB>The Bones of J.R. Jones</a> and more',
+      description:
+        '<a href=spotify:playlist:37i9dQZF1EIXQzODTgQBfd>Kenny Wayne Shepherd</a>, <a href=spotify:playlist:37i9dQZF1EIYwzo1whSdbq>Black Pistol Fire</a>, <a href=spotify:playlist:37i9dQZF1EIWS9TPMaOUkB>The Bones of J.R. Jones</a> and more',
       external_urls: {
         spotify: 'https://open.spotify.com/playlist/37i9dQZF1EQpz3DZCEoX3g',
       },
@@ -94,7 +99,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MTY3NjE4MTYwMCwwMDAwMDAwMGI2MDI5OGJjNzEyNWRiYmNjZWIxYTI5OWEwM2I5MDMz',
+      snapshot_id:
+        'MTY3NjE4MTYwMCwwMDAwMDAwMGI2MDI5OGJjNzEyNWRiYmNjZWIxYTI5OWEwM2I5MDMz',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/37i9dQZF1EQpz3DZCEoX3g/tracks',
         total: 50,
@@ -104,7 +110,8 @@ const base = {
     },
     {
       collaborative: false,
-      description: '<a href=spotify:playlist:37i9dQZF1EIUUcvIysjuWU>Mötley Crüe</a>, <a href=spotify:playlist:37i9dQZF1EIWri12YbtLJp>AC/DC</a>, <a href=spotify:playlist:37i9dQZF1EIYNdvL7KIKmv>Sammy Hagar</a> and more',
+      description:
+        '<a href=spotify:playlist:37i9dQZF1EIUUcvIysjuWU>Mötley Crüe</a>, <a href=spotify:playlist:37i9dQZF1EIWri12YbtLJp>AC/DC</a>, <a href=spotify:playlist:37i9dQZF1EIYNdvL7KIKmv>Sammy Hagar</a> and more',
       external_urls: {
         spotify: 'https://open.spotify.com/playlist/37i9dQZF1EQpj7X7UK8OOF',
       },
@@ -128,7 +135,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MTY3NjE4MTYwMCwwMDAwMDAwMDIxMDQ2YTQ1ZGE3MzcxMmNjMzdlYzk3NzNhNzIzNzYx',
+      snapshot_id:
+        'MTY3NjE4MTYwMCwwMDAwMDAwMDIxMDQ2YTQ1ZGE3MzcxMmNjMzdlYzk3NzNhNzIzNzYx',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/37i9dQZF1EQpj7X7UK8OOF/tracks',
         total: 50,
@@ -172,7 +180,8 @@ const base = {
       },
       primary_color: null,
       public: true,
-      snapshot_id: 'MTYsYjU4NmY4M2QyZDkxNTcwYjhkNDQ1YTNhMGYyM2YwMDA0YTIxYmFjNg==',
+      snapshot_id:
+        'MTYsYjU4NmY4M2QyZDkxNTcwYjhkNDQ1YTNhMGYyM2YwMDA0YTIxYmFjNg==',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/21SupvNU7AndigMFNqTsZ4/tracks',
         total: 335,
@@ -216,7 +225,8 @@ const base = {
       },
       primary_color: null,
       public: true,
-      snapshot_id: 'NDYsYzg5ZjNjMmI0M2UyZGZkZDEzYTMxNzcxYThmYzEyZDA0YWM5MTUyOA==',
+      snapshot_id:
+        'NDYsYzg5ZjNjMmI0M2UyZGZkZDEzYTMxNzcxYThmYzEyZDA0YWM5MTUyOA==',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/00wVUAJyFGP4I7t8gZ0EId/tracks',
         total: 45,
@@ -260,7 +270,8 @@ const base = {
       },
       primary_color: null,
       public: true,
-      snapshot_id: 'MjMsOGY3OWU0YzM0ODRkMGEzZGY5MmI5YTA4N2EyOTAwYmYwYjc5ZDVkNw==',
+      snapshot_id:
+        'MjMsOGY3OWU0YzM0ODRkMGEzZGY5MmI5YTA4N2EyOTAwYmYwYjc5ZDVkNw==',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/0mDxkT99KDev7SkdAF43NR/tracks',
         total: 20,
@@ -270,7 +281,8 @@ const base = {
     },
     {
       collaborative: false,
-      description: 'You are sipping on your coffee in a café in Paris while a Jazz band plays somewhere in the background. ',
+      description:
+        'You are sipping on your coffee in a café in Paris while a Jazz band plays somewhere in the background. ',
       external_urls: {
         spotify: 'https://open.spotify.com/playlist/37i9dQZF1DXbehaqJzJXqw',
       },
@@ -294,7 +306,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MTY3NTc3MTU1MywwMDAwMDAwMDFmMzQxYzI1YzJmNTJjN2YwZTk0NzE1Mjk3NmFkZTc3',
+      snapshot_id:
+        'MTY3NTc3MTU1MywwMDAwMDAwMDFmMzQxYzI1YzJmNTJjN2YwZTk0NzE1Mjk3NmFkZTc3',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/37i9dQZF1DXbehaqJzJXqw/tracks',
         total: 100,
@@ -328,7 +341,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MjM2LGNhMWVhOGUxY2Q0NDY1MzExYzQ2MmMxZTAxMTUyMzhkNzgxMGY5ZTg=',
+      snapshot_id:
+        'MjM2LGNhMWVhOGUxY2Q0NDY1MzExYzQ2MmMxZTAxMTUyMzhkNzgxMGY5ZTg=',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/2wpDMLYZ4FLQLNtfFwHqo4/tracks',
         total: 226,
@@ -338,7 +352,8 @@ const base = {
     },
     {
       collaborative: false,
-      description: 'Equal parts nostalgic synthwave sounds and modern production.',
+      description:
+        'Equal parts nostalgic synthwave sounds and modern production.',
       external_urls: {
         spotify: 'https://open.spotify.com/playlist/37i9dQZF1DXdLEN7aqioXM',
       },
@@ -362,7 +377,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MTY3NTk0NjEwNSwwMDAwMDAwMDM1ZjdiM2UyNTViYzI5ZjBhZTk1OTE4YmM3YmM1OGRl',
+      snapshot_id:
+        'MTY3NTk0NjEwNSwwMDAwMDAwMDM1ZjdiM2UyNTViYzI5ZjBhZTk1OTE4YmM3YmM1OGRl',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/37i9dQZF1DXdLEN7aqioXM/tracks',
         total: 150,
@@ -398,7 +414,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'NDEsN2E0YWQ3ZDJhNjU3MjE0YmE5ZWRhMDY5ODIwNjg2Y2RlYzE2ZWVhMA==',
+      snapshot_id:
+        'NDEsN2E0YWQ3ZDJhNjU3MjE0YmE5ZWRhMDY5ODIwNjg2Y2RlYzE2ZWVhMA==',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/7D6ZFNvTyY6m5wlhetAYem/tracks',
         total: 87,
@@ -434,7 +451,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'NjcyLGJiOTUzNjEwZDY4N2Y1YmYzZjE0MGY5MDRjMmYyMzczMWNlMmNlZmI=',
+      snapshot_id:
+        'NjcyLGJiOTUzNjEwZDY4N2Y1YmYzZjE0MGY5MDRjMmYyMzczMWNlMmNlZmI=',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/73kxCYYtOBbq2CI85qzI7Z/tracks',
         total: 398,
@@ -478,7 +496,8 @@ const base = {
       },
       primary_color: null,
       public: true,
-      snapshot_id: 'MjgsOWQ0NjM4Y2VlODhjNDRjOTQzMDY5MzM3NzNhOGFkMjRmOTlkZDRiZQ==',
+      snapshot_id:
+        'MjgsOWQ0NjM4Y2VlODhjNDRjOTQzMDY5MzM3NzNhOGFkMjRmOTlkZDRiZQ==',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/0IfP7zvUJwLbdpWVuk3M17/tracks',
         total: 27,
@@ -488,7 +507,8 @@ const base = {
     },
     {
       collaborative: false,
-      description: 'For those who love METAL + ORCHESTRA! Old Classics and New Hits - all in one playlist!',
+      description:
+        'For those who love METAL + ORCHESTRA! Old Classics and New Hits - all in one playlist!',
       external_urls: {
         spotify: 'https://open.spotify.com/playlist/2yCqbxs4ztf1kmRTIIujeo',
       },
@@ -514,7 +534,8 @@ const base = {
       },
       primary_color: null,
       public: true,
-      snapshot_id: 'MzcwLGYyZGYxNTNhNjUwNjVlOTMzOGFkMjdhYTJkMjk5YjdkZTllOWMxNmY=',
+      snapshot_id:
+        'MzcwLGYyZGYxNTNhNjUwNjVlOTMzOGFkMjdhYTJkMjk5YjdkZTllOWMxNmY=',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/2yCqbxs4ztf1kmRTIIujeo/tracks',
         total: 112,
@@ -550,7 +571,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MTU1LDUxMzY2ZDg0YTIzMDkxMjI0MDdjMTVjYWU4YzNiMmY0ZDc2NDM4ZmI=',
+      snapshot_id:
+        'MTU1LDUxMzY2ZDg0YTIzMDkxMjI0MDdjMTVjYWU4YzNiMmY0ZDc2NDM4ZmI=',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/7Gjfs4PhOpEOdFBhXJzsZ8/tracks',
         total: 84,
@@ -560,7 +582,8 @@ const base = {
     },
     {
       collaborative: false,
-      description: 'A massive selection of combat music for any tabletop game. No lyrics (mostly), includes soundtracks from games, movies, and TV shows. ',
+      description:
+        'A massive selection of combat music for any tabletop game. No lyrics (mostly), includes soundtracks from games, movies, and TV shows. ',
       external_urls: {
         spotify: 'https://open.spotify.com/playlist/4LcqqIKfJi9119LdqFleVD',
       },
@@ -596,7 +619,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'NTMzLDI1MmZhNjM3ZjM0MjE4MWMyYmE1YWVmNjVhOWE3YWUzMjNiM2FkY2M=',
+      snapshot_id:
+        'NTMzLDI1MmZhNjM3ZjM0MjE4MWMyYmE1YWVmNjVhOWE3YWUzMjNiM2FkY2M=',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/4LcqqIKfJi9119LdqFleVD/tracks',
         total: 401,
@@ -640,7 +664,8 @@ const base = {
       },
       primary_color: null,
       public: true,
-      snapshot_id: 'MjIsNTNjZTZkZjBjNmM0MDFhN2Q3OTM4MzFlNmUwODdkOTkwNTBhMGZjOA==',
+      snapshot_id:
+        'MjIsNTNjZTZkZjBjNmM0MDFhN2Q3OTM4MzFlNmUwODdkOTkwNTBhMGZjOA==',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/2XEagIHbL1pzbDSB9VNm44/tracks',
         total: 21,
@@ -684,7 +709,8 @@ const base = {
       },
       primary_color: null,
       public: true,
-      snapshot_id: 'MjMsY2U3OWM2NzZhYjYzZWM5ODIwY2U2MGVlZjYyNjVkNDA5YjVkYjJlZg==',
+      snapshot_id:
+        'MjMsY2U3OWM2NzZhYjYzZWM5ODIwY2U2MGVlZjYyNjVkNDA5YjVkYjJlZg==',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/7sL7I6MRGjAxUGLPQlCGx1/tracks',
         total: 70,
@@ -718,7 +744,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MTY3NjIzODMzNSwwMDAwMDAwMDA2YzcyOTU3OGE3OTFjNjkyODllY2Q1NjQxNDcxMzZm',
+      snapshot_id:
+        'MTY3NjIzODMzNSwwMDAwMDAwMDA2YzcyOTU3OGE3OTFjNjkyODllY2Q1NjQxNDcxMzZm',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/37i9dQZF1E8EUxavD3Is7t/tracks',
         total: 50,
@@ -762,7 +789,8 @@ const base = {
       },
       primary_color: null,
       public: true,
-      snapshot_id: 'MzQxLDBmYmYxMzQ0OTdlMTlkMDRmN2EyMjcwNjU0NzlhNGIzNDBlZmU3Njk=',
+      snapshot_id:
+        'MzQxLDBmYmYxMzQ0OTdlMTlkMDRmN2EyMjcwNjU0NzlhNGIzNDBlZmU3Njk=',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/1HsHrHEVQsvOfbayeeKllZ/tracks',
         total: 375,
@@ -837,7 +865,16 @@ const base = {
         spotify: 'https://open.spotify.com/artist/4tX2TplrkIP4v05BNC903e',
       },
       followers: { href: null, total: 2456106 },
-      genres: ['album rock', 'classic rock', 'folk rock', 'heartland rock', 'mellow gold', 'pop rock', 'rock', 'soft rock'],
+      genres: [
+        'album rock',
+        'classic rock',
+        'folk rock',
+        'heartland rock',
+        'mellow gold',
+        'pop rock',
+        'rock',
+        'soft rock',
+      ],
       href: 'https://api.spotify.com/v1/artists/4tX2TplrkIP4v05BNC903e',
       id: '4tX2TplrkIP4v05BNC903e',
       images: [
@@ -897,7 +934,18 @@ const base = {
         spotify: 'https://open.spotify.com/artist/2UZMlIwnkgAEDBsw1Rejkn',
       },
       followers: { href: null, total: 2128971 },
-      genres: ['album rock', 'classic rock', 'country rock', 'folk rock', 'heartland rock', 'mellow gold', 'pop rock', 'rock', 'singer-songwriter', 'soft rock'],
+      genres: [
+        'album rock',
+        'classic rock',
+        'country rock',
+        'folk rock',
+        'heartland rock',
+        'mellow gold',
+        'pop rock',
+        'rock',
+        'singer-songwriter',
+        'soft rock',
+      ],
       href: 'https://api.spotify.com/v1/artists/2UZMlIwnkgAEDBsw1Rejkn',
       id: '2UZMlIwnkgAEDBsw1Rejkn',
       images: [
@@ -1052,7 +1100,13 @@ const base = {
         spotify: 'https://open.spotify.com/artist/7sMcWECQxLm7EoKdRlSCAn',
       },
       followers: { href: null, total: 54323 },
-      genres: ['deep new americana', 'modern blues rock', 'new americana', 'roots rock', 'stomp and holler'],
+      genres: [
+        'deep new americana',
+        'modern blues rock',
+        'new americana',
+        'roots rock',
+        'stomp and holler',
+      ],
       href: 'https://api.spotify.com/v1/artists/7sMcWECQxLm7EoKdRlSCAn',
       id: '7sMcWECQxLm7EoKdRlSCAn',
       images: [
@@ -1082,7 +1136,17 @@ const base = {
         spotify: 'https://open.spotify.com/artist/2Hkut4rAAyrQxRdof7FVJq',
       },
       followers: { href: null, total: 2044306 },
-      genres: ['album rock', 'art rock', 'canadian metal', 'classic canadian rock', 'classic rock', 'hard rock', 'metal', 'progressive rock', 'rock'],
+      genres: [
+        'album rock',
+        'art rock',
+        'canadian metal',
+        'classic canadian rock',
+        'classic rock',
+        'hard rock',
+        'metal',
+        'progressive rock',
+        'rock',
+      ],
       href: 'https://api.spotify.com/v1/artists/2Hkut4rAAyrQxRdof7FVJq',
       id: '2Hkut4rAAyrQxRdof7FVJq',
       images: [
@@ -1352,7 +1416,11 @@ const base = {
         spotify: 'https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2',
       },
       followers: { href: null, total: 93231 },
-      genres: ['indie game soundtrack', 'oceania soundtrack', 'video game music'],
+      genres: [
+        'indie game soundtrack',
+        'oceania soundtrack',
+        'video game music',
+      ],
       href: 'https://api.spotify.com/v1/artists/13kMpt8IdcHcdxPLcJrgU2',
       id: '13kMpt8IdcHcdxPLcJrgU2',
       images: [
@@ -1376,6 +1444,72 @@ const base = {
       popularity: 61,
       type: 'artist',
       uri: 'spotify:artist:13kMpt8IdcHcdxPLcJrgU2',
+    },
+    {
+      external_urls: {
+        spotify: 'https://open.spotify.com/artist/1KP6TWI40m7p3QBTU6u2xo',
+      },
+      followers: {
+        href: null,
+        total: 1119211,
+      },
+      genres: ['modern rock', 'pop'],
+      href: 'https://api.spotify.com/v1/artists/1KP6TWI40m7p3QBTU6u2xo',
+      id: '1KP6TWI40m7p3QBTU6u2xo',
+      images: [
+        {
+          height: 640,
+          url: 'https://i.scdn.co/image/ab6761610000e5eb6308e79c621076395807b455',
+          width: 640,
+        },
+        {
+          height: 320,
+          url: 'https://i.scdn.co/image/ab676161000051746308e79c621076395807b455',
+          width: 320,
+        },
+        {
+          height: 160,
+          url: 'https://i.scdn.co/image/ab6761610000f1786308e79c621076395807b455',
+          width: 160,
+        },
+      ],
+      name: 'BØRNS',
+      popularity: 69,
+      type: 'artist',
+      uri: 'spotify:artist:1KP6TWI40m7p3QBTU6u2xo',
+    },
+    {
+      external_urls: {
+        spotify: 'https://open.spotify.com/artist/3886aFez2HDLkio5tUzmP6',
+      },
+      followers: {
+        href: null,
+        total: 379353,
+      },
+      genres: ['alternative metal', 'nu metal', 'post-grunge'],
+      href: 'https://api.spotify.com/v1/artists/3886aFez2HDLkio5tUzmP6',
+      id: '3886aFez2HDLkio5tUzmP6',
+      images: [
+        {
+          height: 640,
+          url: 'https://i.scdn.co/image/ab6761610000e5ebfbe3966172a4e2395f3f7daa',
+          width: 640,
+        },
+        {
+          height: 320,
+          url: 'https://i.scdn.co/image/ab67616100005174fbe3966172a4e2395f3f7daa',
+          width: 320,
+        },
+        {
+          height: 160,
+          url: 'https://i.scdn.co/image/ab6761610000f178fbe3966172a4e2395f3f7daa',
+          width: 160,
+        },
+      ],
+      name: 'Sixx:A.M.',
+      popularity: 54,
+      type: 'artist',
+      uri: 'spotify:artist:3886aFez2HDLkio5tUzmP6',
     },
   ],
 };

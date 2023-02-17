@@ -1,18 +1,27 @@
-import TopBar from '@/components/bars/top/TopBar';
+import ArtistDetail from '@/components/views/details/ArtistDetail/ArtistDetail';
 import ContentSearch from '@/components/views/filters/search/ContentSearch';
 import SearchedContent from '@/components/views/filters/searched/SearchedContent';
 import { mockSearchedContentProps } from '@/components/views/filters/searched/SearchedContent.mock';
+import { useSpotifyContext } from '@/lib/client/context/SpotifyContext';
 import { Box } from '@mui/material';
-import Grid2 from '@mui/material/Unstable_Grid2';
-import { signOut, useSession } from 'next-auth/react';
-import { useState } from 'react';
+import { useSession } from 'next-auth/react';
+import { useEffect, useState } from 'react';
 
-export default function UserHome({ userTotalPlaylists = 0 }) {
-  const [searchResults, setSearchResults] = useState([]);
+export default function UserHome({ userExtended }) {
+  const {
+    setProfile,
+    searchResults,
+    setSearchResults,
+    selectedArtistOrAlbum,
+    setSelectedArtistOrAlbum,
+  } = useSpotifyContext();
+  const { data: session } = useSession();
+  useEffect(() => {
+    setProfile({ user: session?.user, userExtended });
+  }, [setProfile, session?.user, userExtended]);
+
   const [highlightedItemKey, setHighlightedItemKey] = useState();
-  const handleSignout = () => {
-    return signOut();
-  };
+  const [selectedViewState, setSelectedViewState] = useState();
   const handleSearch = () => {
     setSearchResults(mockSearchedContentProps.base.artistSearchResults);
     handleItemSelect(null);
@@ -24,39 +33,69 @@ export default function UserHome({ userTotalPlaylists = 0 }) {
     }
     return setHighlightedItemKey(itemId);
   };
-
-  const { data: session } = useSession();
+  const handleSelectedArtistOrAlbum = (itm) => {
+    const assignedScreenViewFromItemType = {
+      artist: 'artistDetail',
+      album: 'albumDetail',
+      trackList: null,
+    };
+    handleItemSelect(itm?.id || null);
+    setSelectedArtistOrAlbum(itm);
+    setSelectedViewState(assignedScreenViewFromItemType[itm?.type || null]);
+  };
 
   return (
     <>
       {/* TODO: should Index get data and pass it? Should we have a provider? */}
-      <TopBar handleSignout={handleSignout} user={session?.user || {}} userTotalPlaylists={userTotalPlaylists} />
-      <Grid2 container spacing={2}>
-        <Grid2 xs={12} md={7}>
-          <Box mt={2} px={2}>
-            <ContentSearch handleSearch={handleSearch} />
-            <Box mt={2}>
-              <SearchedContent searchResults={searchResults} handleItemSelect={handleItemSelect} highlightedItemKey={highlightedItemKey} />
-            </Box>
-          </Box>
-        </Grid2>
-        <Grid2 xs={12} md={3}>
-          <h2>add to group</h2>
-        </Grid2>
-        <Grid2 xs={12} md={2}>
-          <h2>add group to playlist</h2>
-        </Grid2>
-      </Grid2>
+      <MainContent
+        handleSearch={handleSearch}
+        searchResults={searchResults}
+        selectedContentType={selectedViewState}
+        selectedArtistOrAlbum={selectedArtistOrAlbum}
+        handleSelectedArtistOrAlbum={handleSelectedArtistOrAlbum}
+        highlightedItemKey={highlightedItemKey}
+      />
     </>
   );
 }
 
 // Export the `session` prop to use sessions with Server Side Rendering
 export const getServerSideProps = async () => {
-  const userTotalPlaylists = 17;
+  const userExtended = {
+    userTotalPlaylists: 44,
+  };
   return {
     props: {
-      userTotalPlaylists,
+      userExtended,
     },
   };
+};
+
+const MainContent = (context) => {
+  const {
+    selectedContentType,
+    handleSearch,
+    searchResults,
+    handleSelectedArtistOrAlbum,
+    highlightedItemKey,
+  } = context;
+  switch (selectedContentType) {
+    case 'artistDetail':
+      return <ArtistDetail artist={context?.selectedArtistOrAlbum} />;
+    case 'albumDetail':
+      return <h2>Album details</h2>;
+    default:
+      return (
+        <>
+          <ContentSearch handleSearch={handleSearch} />
+          <Box mt={2}>
+            <SearchedContent
+              searchResults={searchResults}
+              handleSelectedArtistOrAlbum={handleSelectedArtistOrAlbum}
+              highlightedItemKey={highlightedItemKey}
+            />
+          </Box>
+        </>
+      );
+  }
 };

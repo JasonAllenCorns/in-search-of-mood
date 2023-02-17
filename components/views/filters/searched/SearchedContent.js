@@ -3,7 +3,12 @@
 import { Box } from '@mui/material';
 import ArtistItem from '../items/artists/ArtistItem';
 
-const SearchedContent = ({ searchResults = [], handleItemSelect, highlightedItemKey }) => {
+const SearchedContent = ({
+  searchResults = [],
+  handleSelectedArtistOrAlbum,
+  highlightedItemKey,
+}) => {
+  const itemsCount = searchResults?.length || 0;
   return (
     <>
       <Box
@@ -23,9 +28,22 @@ const SearchedContent = ({ searchResults = [], handleItemSelect, highlightedItem
           //       for example
           // TODO: determine Item component type based on result item type
           if (itm?.type.toLowerCase() === 'artist') {
-            const isHighlighted = highlightedItemKey && highlightedItemKey === itm?.id;
+            const isHighlighted =
+              highlightedItemKey && highlightedItemKey === itm?.id;
             const isDimmed = !!highlightedItemKey && !isHighlighted;
-            return <ArtistItem key={itm?.id} artist={itm} isHighlighted={isHighlighted} isDimmed={isDimmed} handleItemSelect={(e) => handleItemSelect(itm?.id, e)} />;
+            return (
+              <ArtistItem
+                key={itm?.id}
+                artist={itm}
+                isHighlighted={isHighlighted}
+                isDimmed={isDimmed}
+                itemOfColumn={idx % 3}
+                itemOfSet={idx / (itemsCount === 0 ? idx : itemsCount)}
+                handleSelectedArtistOrAlbum={() =>
+                  handleSelectedArtistOrAlbum(itm)
+                }
+              />
+            );
           }
           return <div key={idx.toString()}>how did that happen</div>;
         })}

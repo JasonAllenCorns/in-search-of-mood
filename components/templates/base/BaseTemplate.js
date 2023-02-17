@@ -1,4 +1,4 @@
-import styles from '@/components/templates/base/BaseTemplate.module.css';
+import styles from './BaseTemplate.module.css';
 
 const BaseTemplate = ({ sampleTextProp }) => {
   return <div className={styles.container}>{sampleTextProp}</div>;

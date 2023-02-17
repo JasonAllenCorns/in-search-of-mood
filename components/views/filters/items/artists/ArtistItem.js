@@ -1,19 +1,52 @@
-import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Typography,
+} from '@mui/material';
 //import styles from '@components/views/filters/items/artists/ArtistItem.module.css';
 
-const ArtistItem = ({ children, artist = {}, isHighlighted = false, isDimmed = false, handleItemSelect }) => {
-  const artistImage = artist?.images[1]?.url;
-  const artitstAltTitle = `Cover art image provided by Spotify for ${artist?.name || 'this artist'}`;
+const slugify = (str) =>
+  str
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/[\s_-]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+
+const ArtistItem = (props) => {
+  const {
+    children,
+    artist = {},
+    isHighlighted = false,
+    isDimmed = false,
+  } = props;
+  const artistImage = artist?.images?.[1]?.url;
+  const artitstAltTitle = `Cover art image provided by Spotify for ${
+    artist?.name || 'this artist'
+  }`;
   return (
     <Card
       raised={isHighlighted}
       sx={{
-        transition: 'opacity 183ms ease-out, box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+        transition:
+          'opacity 183ms ease-out, box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
         opacity: isDimmed ? 0.4 : 1,
       }}
     >
-      <CardActionArea onClick={handleItemSelect}>
-        <CardMedia component="img" height="209" image={artistImage} alt={artitstAltTitle} />
+      <CardActionArea
+        // onClick={() => { handleSelectedArtistOrAlbum && handleSelectedArtistOrAlbum(artist);}}
+        href={`/dashboard/artist/${artist?.id || '1'}/${slugify(
+          artist?.name || 'missing'
+        )}`}
+      >
+        <CardMedia
+          component="img"
+          height="209"
+          image={artistImage}
+          alt={artitstAltTitle}
+        />
         <CardContent>
           <Typography
             gutterBottom
