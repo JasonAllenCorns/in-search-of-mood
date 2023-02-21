@@ -1,4 +1,3 @@
-import { useSpotifyContext } from '@/lib/client/context/SpotifyContext';
 import { getBlurDataURL } from '@/lib/client/image.blurDataUrl';
 import { FeaturedPlayListRounded, LogoutRounded } from '@mui/icons-material';
 import {
@@ -12,9 +11,11 @@ import {
   Tooltip,
   Typography,
 } from '@mui/material';
+import { useSession } from 'next-auth/react';
 
 const TopBar = ({ handleSignout }) => {
-  const { profile } = useSpotifyContext();
+  const { data: session } = useSession();
+
   return (
     <>
       <AppBar position="static">
@@ -24,17 +25,21 @@ const TopBar = ({ handleSignout }) => {
               In Search of Mood
             </Typography>
             <Box sx={{ flexGrow: 0, mx: 2 }}>
-              <Tooltip title={profile?.name || ''}>
+              <Tooltip title={session?.user?.name || ''}>
                 <Avatar
-                  alt={profile?.name || ''}
-                  src={profile?.image || profile?.picture || getBlurDataURL()}
+                  alt={session?.user?.name || ''}
+                  src={
+                    session?.user?.image ||
+                    session?.user?.picture ||
+                    getBlurDataURL()
+                  }
                 />
               </Tooltip>
             </Box>
             <Box sx={{ flexGrow: 0, mx: 2 }}>
               <Tooltip title="how many playlists you have">
                 <Badge
-                  badgeContent={profile?.userTotalPlaylists || 0}
+                  badgeContent={session?.user?.userTotalPlaylists || 0}
                   color="primary"
                 >
                   <FeaturedPlayListRounded />

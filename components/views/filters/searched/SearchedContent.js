@@ -1,13 +1,11 @@
 // import styles from '@/components/views/filters/searched/SearchedContent.module.css';
 
+import { useSpotifyContext } from '@/lib/client/context/SpotifyContext';
 import { Box } from '@mui/material';
 import ArtistItem from '../items/artists/ArtistItem';
 
-const SearchedContent = ({
-  searchResults = [],
-  handleSelectedArtistOrAlbum,
-  highlightedItemKey,
-}) => {
+const SearchedContent = () => {
+  const { searchResults, selectedArtist, selectedAlbum } = useSpotifyContext();
   const itemsCount = searchResults?.length || 0;
   return (
     <>
@@ -27,6 +25,8 @@ const SearchedContent = ({
           //       https://developer.spotify.com/documentation/web-api/reference/#/operations/get-users-top-artists-and-tracks
           //       for example
           // TODO: determine Item component type based on result item type
+          const highlightedItemKey =
+            itm?.type === 'album' ? selectedAlbum?.id : selectedArtist?.id;
           if (itm?.type.toLowerCase() === 'artist') {
             const isHighlighted =
               highlightedItemKey && highlightedItemKey === itm?.id;
@@ -39,9 +39,6 @@ const SearchedContent = ({
                 isDimmed={isDimmed}
                 itemOfColumn={idx % 3}
                 itemOfSet={idx / (itemsCount === 0 ? idx : itemsCount)}
-                handleSelectedArtistOrAlbum={() =>
-                  handleSelectedArtistOrAlbum(itm)
-                }
               />
             );
           }

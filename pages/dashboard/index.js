@@ -4,21 +4,15 @@ import SearchedContent from '@/components/views/filters/searched/SearchedContent
 import { mockSearchedContentProps } from '@/components/views/filters/searched/SearchedContent.mock';
 import { useSpotifyContext } from '@/lib/client/context/SpotifyContext';
 import { Box } from '@mui/material';
-import { useSession } from 'next-auth/react';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 export default function UserHome({ userExtended }) {
   const {
-    setProfile,
     searchResults,
     setSearchResults,
     selectedArtistOrAlbum,
     setSelectedArtistOrAlbum,
   } = useSpotifyContext();
-  const { data: session } = useSession();
-  useEffect(() => {
-    setProfile({ user: session?.user, userExtended });
-  }, [setProfile, session?.user, userExtended]);
 
   const [highlightedItemKey, setHighlightedItemKey] = useState();
   const [selectedViewState, setSelectedViewState] = useState();
@@ -33,6 +27,7 @@ export default function UserHome({ userExtended }) {
     }
     return setHighlightedItemKey(itemId);
   };
+
   const handleSelectedArtistOrAlbum = (itm) => {
     const assignedScreenViewFromItemType = {
       artist: 'artistDetail',

@@ -1,27 +1,17 @@
-import { TaskAltRounded } from '@mui/icons-material';
-import {
-  Button,
-  Card,
-  CardContent,
-  CardMedia,
-  Grid,
-  Typography,
-} from '@mui/material';
+import { Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
 
 const ArtistDetail = (props) => {
   const { artist } = props;
   const artistImage = artist?.images?.[0]?.url;
+  console.log('(jason.corns) artistImage', artistImage);
   const artitstAltTitle = `Cover art image provided by Spotify for ${
     artist?.name || 'this artist'
   }`;
+  console.log('(jason.corns) artitstAltTitle', artitstAltTitle);
   return (
     <Grid container columnGap={2}>
       <Grid item xs={12}>
-        <Button size="large" endIcon={<TaskAltRounded />}>
-          Finished with this artist
-        </Button>
-      </Grid>
-      <Grid item xs={12}>
+        image: {JSON.stringify(artist)}
         <Card>
           <CardMedia
             component="img"

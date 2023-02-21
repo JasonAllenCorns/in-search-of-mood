@@ -291,7 +291,7 @@ const base = {
       images: [
         {
           height: null,
-          url: 'https://i.scdn.co/image/ab67706f000000037b0d0ae12b71cc2a03be21c1',
+          url: '//localhost:3000/media/cached/ab67706f000000037b0d0ae12b71cc2a03be21c1.jpeg',
           width: null,
         },
       ],
@@ -326,7 +326,7 @@ const base = {
       images: [
         {
           height: null,
-          url: 'https://i.scdn.co/image/ab67706c0000bebbf14a94179dbdfe55eae2a896',
+          url: '//localhost:3000/media/cached/ab67706c0000bebbf14a94179dbdfe55eae2a896.jpeg',
           width: null,
         },
       ],
@@ -362,7 +362,7 @@ const base = {
       images: [
         {
           height: null,
-          url: 'https://i.scdn.co/image/ab67706f000000039e1d309b5c071ea06cb32103',
+          url: '//localhost:3000/media/cached/ab67706f000000039e1d309b5c071ea06cb32103.jpeg',
           width: null,
         },
       ],
@@ -397,7 +397,7 @@ const base = {
       images: [
         {
           height: null,
-          url: 'https://i.scdn.co/image/ab67706c0000bebbaea87ae37ab55895c49da401',
+          url: '//localhost:3000/media/cached/ab67706c0000bebbaea87ae37ab55895c49da401.jpeg',
           width: null,
         },
       ],
@@ -434,7 +434,7 @@ const base = {
       images: [
         {
           height: null,
-          url: 'https://i.scdn.co/image/ab67706c0000bebba419cae61e54b92b9fe20311',
+          url: '//localhost:3000/media/cached/ab67706c0000bebba419cae61e54b92b9fe20311.jpeg',
           width: null,
         },
       ],
@@ -517,7 +517,7 @@ const base = {
       images: [
         {
           height: null,
-          url: 'https://i.scdn.co/image/ab67706c0000bebb74d51a398140beb8511b556d',
+          url: '//localhost:3000/media/cached/ab67706c0000bebb74d51a398140beb8511b556d.jpeg',
           width: null,
         },
       ],
@@ -554,7 +554,7 @@ const base = {
       images: [
         {
           height: null,
-          url: 'https://i.scdn.co/image/ab67706c0000bebb56e45a50cae4ec3792347481',
+          url: '//localhost:3000/media/cached/ab67706c0000bebb56e45a50cae4ec3792347481.jpeg',
           width: null,
         },
       ],
@@ -811,17 +811,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebc5733401b4689b2064458e7d',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebc5733401b4689b2064458e7d.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174c5733401b4689b2064458e7d',
+          url: '//localhost:3000/media/cached/ab67616100005174c5733401b4689b2064458e7d.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178c5733401b4689b2064458e7d',
+          url: '//localhost:3000/media/cached/ab6761610000f178c5733401b4689b2064458e7d.jpeg',
           width: 160,
         },
       ],
@@ -841,17 +841,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebaedf866bc2eff6fae08577d9',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebaedf866bc2eff6fae08577d9.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174aedf866bc2eff6fae08577d9',
+          url: '//localhost:3000/media/cached/ab67616100005174aedf866bc2eff6fae08577d9.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178aedf866bc2eff6fae08577d9',
+          url: '//localhost:3000/media/cached/ab6761610000f178aedf866bc2eff6fae08577d9.jpeg',
           width: 160,
         },
       ],
@@ -880,17 +880,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebfabc6315ae43968729ce9e36',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebfabc6315ae43968729ce9e36.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174fabc6315ae43968729ce9e36',
+          url: '//localhost:3000/media/cached/ab67616100005174fabc6315ae43968729ce9e36.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178fabc6315ae43968729ce9e36',
+          url: '//localhost:3000/media/cached/ab6761610000f178fabc6315ae43968729ce9e36.jpeg',
           width: 160,
         },
       ],
@@ -910,17 +910,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebc4c77549095c86acb4e77b37',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebc4c77549095c86acb4e77b37.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174c4c77549095c86acb4e77b37',
+          url: '//localhost:3000/media/cached/ab67616100005174c4c77549095c86acb4e77b37.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178c4c77549095c86acb4e77b37',
+          url: '//localhost:3000/media/cached/ab6761610000f178c4c77549095c86acb4e77b37.jpeg',
           width: 160,
         },
       ],
@@ -951,17 +951,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eba56c2e176f0626e2a001431f',
+          url: '//localhost:3000/media/cached/ab6761610000e5eba56c2e176f0626e2a001431f.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174a56c2e176f0626e2a001431f',
+          url: '//localhost:3000/media/cached/ab67616100005174a56c2e176f0626e2a001431f.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178a56c2e176f0626e2a001431f',
+          url: '//localhost:3000/media/cached/ab6761610000f178a56c2e176f0626e2a001431f.jpeg',
           width: 160,
         },
       ],
@@ -981,22 +981,22 @@ const base = {
       images: [
         {
           height: 806,
-          url: 'https://i.scdn.co/image/b040846ceba13c3e9c125d68389491094e7f2982',
+          url: '//localhost:3000/media/cached/b040846ceba13c3e9c125d68389491094e7f2982.jpeg',
           width: 999,
         },
         {
           height: 516,
-          url: 'https://i.scdn.co/image/af2b8e57f6d7b5d43a616bd1e27ba552cd8bfd42',
+          url: '//localhost:3000/media/cached/af2b8e57f6d7b5d43a616bd1e27ba552cd8bfd42.jpeg',
           width: 640,
         },
         {
           height: 161,
-          url: 'https://i.scdn.co/image/c06971e9ff81696699b829484e3be165f4e64368',
+          url: '//localhost:3000/media/cached/c06971e9ff81696699b829484e3be165f4e64368.jpeg',
           width: 200,
         },
         {
           height: 52,
-          url: 'https://i.scdn.co/image/6dd0ffd270903d1884edf9058c49f58b03db893d',
+          url: '//localhost:3000/media/cached/6dd0ffd270903d1884edf9058c49f58b03db893d.jpeg',
           width: 64,
         },
       ],
@@ -1016,17 +1016,17 @@ const base = {
       images: [
         {
           height: 600,
-          url: 'https://i.scdn.co/image/207803ce008388d3427a685254f9de6a8f61dc2e',
+          url: '//localhost:3000/media/cached/207803ce008388d3427a685254f9de6a8f61dc2e.jpeg',
           width: 600,
         },
         {
           height: 200,
-          url: 'https://i.scdn.co/image/b0248a44865493e6a03832aa89854ada16ff07a8',
+          url: '//localhost:3000/media/cached/b0248a44865493e6a03832aa89854ada16ff07a8.jpeg',
           width: 200,
         },
         {
           height: 64,
-          url: 'https://i.scdn.co/image/16eb3cdae0d824b520ac17710e943a99d3ef6602',
+          url: '//localhost:3000/media/cached/16eb3cdae0d824b520ac17710e943a99d3ef6602.jpeg',
           width: 64,
         },
       ],
@@ -1046,17 +1046,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebb5b52f7e13f720c7a4856306',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebb5b52f7e13f720c7a4856306.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174b5b52f7e13f720c7a4856306',
+          url: '//localhost:3000/media/cached/ab67616100005174b5b52f7e13f720c7a4856306.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178b5b52f7e13f720c7a4856306',
+          url: '//localhost:3000/media/cached/ab6761610000f178b5b52f7e13f720c7a4856306.jpeg',
           width: 160,
         },
       ],
@@ -1076,17 +1076,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebd8475001d2700686e1008dfb',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebd8475001d2700686e1008dfb.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174d8475001d2700686e1008dfb',
+          url: '//localhost:3000/media/cached/ab67616100005174d8475001d2700686e1008dfb.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178d8475001d2700686e1008dfb',
+          url: '//localhost:3000/media/cached/ab6761610000f178d8475001d2700686e1008dfb.jpeg',
           width: 160,
         },
       ],
@@ -1112,17 +1112,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eb045d5ca9454b3e254e1d8728',
+          url: '//localhost:3000/media/cached/ab6761610000e5eb045d5ca9454b3e254e1d8728.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174045d5ca9454b3e254e1d8728',
+          url: '//localhost:3000/media/cached/ab67616100005174045d5ca9454b3e254e1d8728.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178045d5ca9454b3e254e1d8728',
+          url: '//localhost:3000/media/cached/ab6761610000f178045d5ca9454b3e254e1d8728.jpeg',
           width: 160,
         },
       ],
@@ -1152,17 +1152,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eb896c4b043fb3063178afd716',
+          url: '//localhost:3000/media/cached/ab6761610000e5eb896c4b043fb3063178afd716.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174896c4b043fb3063178afd716',
+          url: '//localhost:3000/media/cached/ab67616100005174896c4b043fb3063178afd716.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178896c4b043fb3063178afd716',
+          url: '//localhost:3000/media/cached/ab6761610000f178896c4b043fb3063178afd716.jpeg',
           width: 160,
         },
       ],
@@ -1182,17 +1182,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebab0922f900e6c22b8ef4c01c',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebab0922f900e6c22b8ef4c01c.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174ab0922f900e6c22b8ef4c01c',
+          url: '//localhost:3000/media/cached/ab67616100005174ab0922f900e6c22b8ef4c01c.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178ab0922f900e6c22b8ef4c01c',
+          url: '//localhost:3000/media/cached/ab6761610000f178ab0922f900e6c22b8ef4c01c.jpeg',
           width: 160,
         },
       ],
@@ -1212,17 +1212,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eb18410be0ab6355af4422763d',
+          url: '//localhost:3000/media/cached/ab6761610000e5eb18410be0ab6355af4422763d.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab6761610000517418410be0ab6355af4422763d',
+          url: '//localhost:3000/media/cached/ab6761610000517418410be0ab6355af4422763d.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f17818410be0ab6355af4422763d',
+          url: '//localhost:3000/media/cached/ab6761610000f17818410be0ab6355af4422763d.jpeg',
           width: 160,
         },
       ],
@@ -1242,17 +1242,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eba036cf8a81e30b81b76ab056',
+          url: '//localhost:3000/media/cached/ab6761610000e5eba036cf8a81e30b81b76ab056.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174a036cf8a81e30b81b76ab056',
+          url: '//localhost:3000/media/cached/ab67616100005174a036cf8a81e30b81b76ab056.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178a036cf8a81e30b81b76ab056',
+          url: '//localhost:3000/media/cached/ab6761610000f178a036cf8a81e30b81b76ab056.jpeg',
           width: 160,
         },
       ],
@@ -1272,17 +1272,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebd1685a718135c64d378146e9',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebd1685a718135c64d378146e9.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174d1685a718135c64d378146e9',
+          url: '//localhost:3000/media/cached/ab67616100005174d1685a718135c64d378146e9.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178d1685a718135c64d378146e9',
+          url: '//localhost:3000/media/cached/ab6761610000f178d1685a718135c64d378146e9.jpeg',
           width: 160,
         },
       ],
@@ -1302,17 +1302,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eb0b8d424042d51bb8ee412ffe',
+          url: '//localhost:3000/media/cached/ab6761610000e5eb0b8d424042d51bb8ee412ffe.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab676161000051740b8d424042d51bb8ee412ffe',
+          url: '//localhost:3000/media/cached/ab676161000051740b8d424042d51bb8ee412ffe.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f1780b8d424042d51bb8ee412ffe',
+          url: '//localhost:3000/media/cached/ab6761610000f1780b8d424042d51bb8ee412ffe.jpeg',
           width: 160,
         },
       ],
@@ -1332,17 +1332,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eb2e274deb3b6033e3df4ba324',
+          url: '//localhost:3000/media/cached/ab6761610000e5eb2e274deb3b6033e3df4ba324.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab676161000051742e274deb3b6033e3df4ba324',
+          url: '//localhost:3000/media/cached/ab676161000051742e274deb3b6033e3df4ba324.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f1782e274deb3b6033e3df4ba324',
+          url: '//localhost:3000/media/cached/ab6761610000f1782e274deb3b6033e3df4ba324.jpeg',
           width: 160,
         },
       ],
@@ -1362,17 +1362,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eb50defaf9fc059a1efc541f4c',
+          url: '//localhost:3000/media/cached/ab6761610000e5eb50defaf9fc059a1efc541f4c.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab6761610000517450defaf9fc059a1efc541f4c',
+          url: '//localhost:3000/media/cached/ab6761610000517450defaf9fc059a1efc541f4c.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f17850defaf9fc059a1efc541f4c',
+          url: '//localhost:3000/media/cached/ab6761610000f17850defaf9fc059a1efc541f4c.jpeg',
           width: 160,
         },
       ],
@@ -1392,17 +1392,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eb8e19de59bac2628eb8929156',
+          url: '//localhost:3000/media/cached/ab6761610000e5eb8e19de59bac2628eb8929156.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab676161000051748e19de59bac2628eb8929156',
+          url: '//localhost:3000/media/cached/ab676161000051748e19de59bac2628eb8929156.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f1788e19de59bac2628eb8929156',
+          url: '//localhost:3000/media/cached/ab6761610000f1788e19de59bac2628eb8929156.jpeg',
           width: 160,
         },
       ],
@@ -1426,17 +1426,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab67616d0000b273164ec11a1225d579ed030c42',
+          url: '//localhost:3000/media/cached/ab67616d0000b273164ec11a1225d579ed030c42.jpeg',
           width: 640,
         },
         {
           height: 300,
-          url: 'https://i.scdn.co/image/ab67616d00001e02164ec11a1225d579ed030c42',
+          url: '//localhost:3000/media/cached/ab67616d00001e02164ec11a1225d579ed030c42.jpeg',
           width: 300,
         },
         {
           height: 64,
-          url: 'https://i.scdn.co/image/ab67616d00004851164ec11a1225d579ed030c42',
+          url: '//localhost:3000/media/cached/ab67616d00004851164ec11a1225d579ed030c42.jpeg',
           width: 64,
         },
       ],
@@ -1459,17 +1459,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eb6308e79c621076395807b455',
+          url: '//localhost:3000/media/cached/ab6761610000e5eb6308e79c621076395807b455.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab676161000051746308e79c621076395807b455',
+          url: '//localhost:3000/media/cached/ab676161000051746308e79c621076395807b455.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f1786308e79c621076395807b455',
+          url: '//localhost:3000/media/cached/ab6761610000f1786308e79c621076395807b455.jpeg',
           width: 160,
         },
       ],
@@ -1492,17 +1492,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebfbe3966172a4e2395f3f7daa',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebfbe3966172a4e2395f3f7daa.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174fbe3966172a4e2395f3f7daa',
+          url: '//localhost:3000/media/cached/ab67616100005174fbe3966172a4e2395f3f7daa.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178fbe3966172a4e2395f3f7daa',
+          url: '//localhost:3000/media/cached/ab6761610000f178fbe3966172a4e2395f3f7daa.jpeg',
           width: 160,
         },
       ],

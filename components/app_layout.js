@@ -2,7 +2,6 @@
 // import Footer from "./footer"
 import { Box, Grid } from '@mui/material';
 import Head from 'next/head';
-import TopBar from './bars/top/TopBar';
 // import styles from '@/styles/components/AppLayout.module.css';
 
 export default function Layout(props) {
@@ -15,7 +14,6 @@ export default function Layout(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <TopBar />
         <Grid container>
           <Grid item xs={12} md={7}>
             <Box mt={2} px={2}>

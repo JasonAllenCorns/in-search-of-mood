@@ -1,4 +1,5 @@
 import Layout from '@/components/app_layout';
+import TopBar from '@/components/bars/top/TopBar';
 import { SpotifyProvider } from '@/lib/client/context/SpotifyContext';
 import createEmotionCache from '@/styles/style_utils/EmotionCache';
 import { theme } from '@/styles/style_utils/theme';
@@ -25,6 +26,7 @@ export default function App({
             <Component {...pageProps} />
           ) : (
             <SpotifyProvider>
+              <TopBar />
               <Layout>
                 <Component {...pageProps} />
               </Layout>

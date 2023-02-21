@@ -1,15 +1,30 @@
+import ArtistDetail from '@/components/views/details/ArtistDetail/ArtistDetail';
+import { useSpotifyContext } from '@/lib/client/context/SpotifyContext';
+import { TaskAltRounded } from '@mui/icons-material';
+import { Button, Grid } from '@mui/material';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
-// import Link from 'next/link';
 
 export default function ArtistPage() {
   const router = useRouter();
-  const id = router.query.id;
-  const artistName = router.query.artistName;
-
+  const { selectedArtist, setSelectedArtistOrAlbum } = useSpotifyContext();
+  // TODO: if relaod then cache is lost.
+  //       push to local storage? re-fetch?
+  const handleExitArtistDetail = (e) => {
+    e.preventDefault();
+    setSelectedArtistOrAlbum(null);
+    router.push('/dashboard');
+  };
   return (
     <>
-      <h1>Artist Name: {artistName}</h1>
-      <h2>Artist ID: {id}</h2>
+      <Grid item xs={12}>
+        <Link size="large" href={'/dasboard'} onClick={handleExitArtistDetail}>
+          <Button size="large" endIcon={<TaskAltRounded />}>
+            Finished with this artist
+          </Button>
+        </Link>
+      </Grid>
+      <ArtistDetail artist={selectedArtist} />
     </>
   );
 }

@@ -1,3 +1,4 @@
+import { useSpotifyContext } from '@/lib/client/context/SpotifyContext';
 import {
   Card,
   CardActionArea,
@@ -5,6 +6,7 @@ import {
   CardMedia,
   Typography,
 } from '@mui/material';
+import { useRouter } from 'next/router';
 //import styles from '@components/views/filters/items/artists/ArtistItem.module.css';
 
 const slugify = (str) =>
@@ -16,16 +18,26 @@ const slugify = (str) =>
     .replace(/^-+|-+$/g, '');
 
 const ArtistItem = (props) => {
+  const router = useRouter();
   const {
     children,
     artist = {},
     isHighlighted = false,
     isDimmed = false,
   } = props;
-  const artistImage = artist?.images?.[1]?.url;
+  const artistImage = artist?.images?.[0]?.url;
   const artitstAltTitle = `Cover art image provided by Spotify for ${
     artist?.name || 'this artist'
   }`;
+  const { setSelectedArtistOrAlbum } = useSpotifyContext();
+  const handleSetSelectedArtistOrAlbum = (e, itm) => {
+    e.preventDefault();
+    console.log(itm);
+    setSelectedArtistOrAlbum(itm);
+    router.push(
+      `/dashboard/artist/${itm?.id || '1'}/${slugify(itm?.name || 'missing')}`
+    );
+  };
   return (
     <Card
       raised={isHighlighted}
@@ -36,7 +48,9 @@ const ArtistItem = (props) => {
       }}
     >
       <CardActionArea
-        // onClick={() => { handleSelectedArtistOrAlbum && handleSelectedArtistOrAlbum(artist);}}
+        onClick={(e) => {
+          handleSetSelectedArtistOrAlbum(e, artist);
+        }}
         href={`/dashboard/artist/${artist?.id || '1'}/${slugify(
           artist?.name || 'missing'
         )}`}

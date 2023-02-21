@@ -1,10 +1,10 @@
 // import React, { useEffect, useState } from 'react';
-import Button from '@mui/material/Button';
+import { authOptions } from '@/pages/api/auth/[...nextauth]';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import { getServerSession } from 'next-auth/next';
-import { authOptions } from '@/pages/api/auth/[...nextauth]';
 import { signIn } from 'next-auth/react';
 
 import styles from '@/styles/pages/Visitor.module.css';
@@ -13,7 +13,6 @@ import Image from 'next/image';
 export default function Home(props) {
   const { callbackUrl } = props;
   const handleClick = () => {
-    console.log('a click was handled');
     signIn('spotify', { callbackUrl });
   };
 
@@ -21,11 +20,35 @@ export default function Home(props) {
     <>
       <div className={styles.heroBlock}>
         <Card className={styles.videoTron}>
-          <CardMedia className={styles.heroMedia} component="video" image="/media/InSearchOfMood.mp4" title="sadflij" playsInline autoPlay muted loop />
+          <CardMedia
+            className={styles.heroMedia}
+            component="video"
+            image="/media/InSearchOfMood.mp4"
+            title="sadflij"
+            playsInline
+            autoPlay
+            muted
+            loop
+          />
         </Card>
-        <Box className={`${styles.jumboTron} ${styles.passThrough}`} elevation={2} sx={{ mx: 'auto', width: 220 }}>
-          <Button color="inherit" variant="contained" className={styles.providerLogin} onClick={handleClick}>
-            Sign in with <Image width={80} height={24} src="/media/spotify_logo.png" alt="Spotify radiant sound logo and branded name." />
+        <Box
+          className={`${styles.jumboTron} ${styles.passThrough}`}
+          elevation={2}
+          sx={{ mx: 'auto', width: 220 }}
+        >
+          <Button
+            color="inherit"
+            variant="contained"
+            className={styles.providerLogin}
+            onClick={handleClick}
+          >
+            Sign in with{' '}
+            <Image
+              width={80}
+              height={24}
+              src="/media/spotify_logo.png"
+              alt="Spotify radiant sound logo and branded name."
+            />
           </Button>
         </Box>
       </div>
