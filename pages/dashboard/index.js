@@ -6,7 +6,7 @@ import { useSpotifyContext } from '@/lib/client/context/SpotifyContext';
 import { Box } from '@mui/material';
 import { useState } from 'react';
 
-export default function UserHome({ userExtended }) {
+export default function UserHome() {
   const {
     searchResults,
     setSearchResults,
