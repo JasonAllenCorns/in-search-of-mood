@@ -5,8 +5,8 @@ import { Box } from '@mui/material';
 import ArtistItem from '../items/artists/ArtistItem';
 
 const SearchedContent = () => {
-  const { searchResults, selectedArtist, selectedAlbum } = useSpotifyContext();
-  const itemsCount = searchResults?.length || 0;
+  const { getSearchResults } = useSpotifyContext();
+  const itemsCount = getSearchResults()?.length || 0;
   return (
     <>
       <Box
@@ -17,7 +17,7 @@ const SearchedContent = () => {
           gap: 2,
         }}
       >
-        {searchResults.map((itm, idx) => {
+        {getSearchResults().map((itm, idx) => {
           // const thisImage = itm.images[1];
           // const iSrc = thisImage.url;
           // NOTE: Spotify API will return items in groups that have 'type' prop
@@ -25,18 +25,13 @@ const SearchedContent = () => {
           //       https://developer.spotify.com/documentation/web-api/reference/#/operations/get-users-top-artists-and-tracks
           //       for example
           // TODO: determine Item component type based on result item type
-          const highlightedItemKey =
-            itm?.type === 'album' ? selectedAlbum?.id : selectedArtist?.id;
+          // const highlightedItemKey =
+          //   itm?.type === 'album' ? selectedAlbum?.id : selectedArtist?.id;
           if (itm?.type.toLowerCase() === 'artist') {
-            const isHighlighted =
-              highlightedItemKey && highlightedItemKey === itm?.id;
-            const isDimmed = !!highlightedItemKey && !isHighlighted;
             return (
               <ArtistItem
                 key={itm?.id}
                 artist={itm}
-                isHighlighted={isHighlighted}
-                isDimmed={isDimmed}
                 itemOfColumn={idx % 3}
                 itemOfSet={idx / (itemsCount === 0 ? idx : itemsCount)}
               />

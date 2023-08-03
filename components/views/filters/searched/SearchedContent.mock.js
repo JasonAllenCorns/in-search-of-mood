@@ -802,6 +802,39 @@ const base = {
   artistSearchResults: [
     {
       external_urls: {
+        spotify: 'https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02',
+      },
+      followers: {
+        href: null,
+        total: 68621410,
+      },
+      genres: ['pop'],
+      href: 'https://api.spotify.com/v1/artists/06HL4z0CvFAxyc27GXpf02',
+      id: '06HL4z0CvFAxyc27GXpf02',
+      images: [
+        {
+          height: 640,
+          url: '//localhost:3000/media/cached/ab6761610000e5eb5a00969a4698c3132a15fbb0.jpeg',
+          width: 640,
+        },
+        {
+          height: 320,
+          url: '//localhost:3000/media/cached/ab676161000051745a00969a4698c3132a15fbb0.jpeg',
+          width: 320,
+        },
+        {
+          height: 160,
+          url: '//localhost:3000/media/cached/ab6761610000f1785a00969a4698c3132a15fbb0.jpeg',
+          width: 160,
+        },
+      ],
+      name: 'Taylor Swift',
+      popularity: 99,
+      type: 'artist',
+      uri: 'spotify:artist:06HL4z0CvFAxyc27GXpf02',
+    },
+    {
+      external_urls: {
         spotify: 'https://open.spotify.com/artist/7Ey4PD4MYsKc5I2dolUwbH',
       },
       followers: { href: null, total: 13129965 },

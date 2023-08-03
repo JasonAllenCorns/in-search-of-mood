@@ -1,7 +1,6 @@
 import ArtistDetail from '@/components/views/details/ArtistDetail/ArtistDetail';
 import ContentSearch from '@/components/views/filters/search/ContentSearch';
 import SearchedContent from '@/components/views/filters/searched/SearchedContent';
-import { mockSearchedContentProps } from '@/components/views/filters/searched/SearchedContent.mock';
 import { useSpotifyContext } from '@/lib/client/context/SpotifyContext';
 import { Box } from '@mui/material';
 import { useState } from 'react';
@@ -9,18 +8,13 @@ import { useState } from 'react';
 export default function UserHome() {
   const {
     searchResults,
-    setSearchResults,
-    selectedArtistOrAlbum,
+    selectedArtist,
+    getSelectedAlbum,
     setSelectedArtistOrAlbum,
   } = useSpotifyContext();
 
   const [highlightedItemKey, setHighlightedItemKey] = useState();
   const [selectedViewState, setSelectedViewState] = useState();
-  const handleSearch = () => {
-    setSearchResults(mockSearchedContentProps.base.artistSearchResults);
-    handleItemSelect(null);
-    return true;
-  };
   const handleItemSelect = (itemId) => {
     if (itemId === highlightedItemKey) {
       return setHighlightedItemKey(null);
@@ -43,10 +37,10 @@ export default function UserHome() {
     <>
       {/* TODO: should Index get data and pass it? Should we have a provider? */}
       <MainContent
-        handleSearch={handleSearch}
         searchResults={searchResults}
         selectedContentType={selectedViewState}
-        selectedArtistOrAlbum={selectedArtistOrAlbum}
+        selectedAlbum={getSelectedAlbum}
+        selectedArtist={selectedArtist}
         handleSelectedArtistOrAlbum={handleSelectedArtistOrAlbum}
         highlightedItemKey={highlightedItemKey}
       />
@@ -69,20 +63,19 @@ export const getServerSideProps = async () => {
 const MainContent = (context) => {
   const {
     selectedContentType,
-    handleSearch,
     searchResults,
     handleSelectedArtistOrAlbum,
     highlightedItemKey,
   } = context;
   switch (selectedContentType) {
     case 'artistDetail':
-      return <ArtistDetail artist={context?.selectedArtistOrAlbum} />;
+      return <ArtistDetail artist={context?.selectedArtist} />;
     case 'albumDetail':
       return <h2>Album details</h2>;
     default:
       return (
         <>
-          <ContentSearch handleSearch={handleSearch} />
+          <ContentSearch />
           <Box mt={2}>
             <SearchedContent
               searchResults={searchResults}

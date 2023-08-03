@@ -15,7 +15,7 @@ export default function Layout(props) {
       </Head>
       <main>
         <Grid container>
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} md={6}>
             <Box mt={2} px={2}>
               {props.children}
             </Box>
@@ -23,7 +23,7 @@ export default function Layout(props) {
           <Grid item xs={12} md={3}>
             <h2>add to group</h2>
           </Grid>
-          <Grid item xs={12} md={2}>
+          <Grid item xs={12} md={3}>
             <h2>add group to playlist</h2>
           </Grid>
         </Grid>
