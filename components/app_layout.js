@@ -1,5 +1,6 @@
 // import Header from "./header"
 // import Footer from "./footer"
+import { Box, Grid } from '@mui/material';
 import Head from 'next/head';
 // import styles from '@/styles/components/AppLayout.module.css';
 
@@ -12,7 +13,21 @@ export default function Layout(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>{props.children}</main>
+      <main>
+        <Grid container>
+          <Grid item xs={12} md={6}>
+            <Box mt={2} px={2}>
+              {props.children}
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <h2>add to group</h2>
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <h2>add group to playlist</h2>
+          </Grid>
+        </Grid>
+      </main>
     </>
   );
 }

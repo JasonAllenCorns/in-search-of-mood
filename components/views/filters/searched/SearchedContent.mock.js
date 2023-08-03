@@ -2,7 +2,8 @@ const base = {
   playlistSearchResults: [
     {
       collaborative: false,
-      description: "<a href=spotify:playlist:37i9dQZF1EIUUcvIysjuWU>Mötley Crüe</a>, <a href=spotify:playlist:37i9dQZF1EIYNdvL7KIKmv>Sammy Hagar</a>, <a href=spotify:playlist:37i9dQZF1EIUJTGPtK0muv>Guns N' Roses</a> and more",
+      description:
+        "<a href=spotify:playlist:37i9dQZF1EIUUcvIysjuWU>Mötley Crüe</a>, <a href=spotify:playlist:37i9dQZF1EIYNdvL7KIKmv>Sammy Hagar</a>, <a href=spotify:playlist:37i9dQZF1EIUJTGPtK0muv>Guns N' Roses</a> and more",
       external_urls: {
         spotify: 'https://open.spotify.com/playlist/37i9dQZF1EIWMVrLAqdGXR',
       },
@@ -26,7 +27,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MTY3NjIzODMzNSwwMDAwMDAwMDFiNGUxOWFlNGJiNGRkOGIxMjg3MzI2Y2YwYzFjNzNl',
+      snapshot_id:
+        'MTY3NjIzODMzNSwwMDAwMDAwMDFiNGUxOWFlNGJiNGRkOGIxMjg3MzI2Y2YwYzFjNzNl',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/37i9dQZF1EIWMVrLAqdGXR/tracks',
         total: 50,
@@ -36,7 +38,8 @@ const base = {
     },
     {
       collaborative: false,
-      description: '<a href=spotify:playlist:37i9dQZF1EIZg41pwKO8Dz>Judas Priest</a>, <a href=spotify:playlist:37i9dQZF1EIY9cVGruPODT>Five Finger Death Punch</a>, <a href=spotify:playlist:37i9dQZF1EIZoNYWgvuEcy>Amaranthe</a> and more',
+      description:
+        '<a href=spotify:playlist:37i9dQZF1EIZg41pwKO8Dz>Judas Priest</a>, <a href=spotify:playlist:37i9dQZF1EIY9cVGruPODT>Five Finger Death Punch</a>, <a href=spotify:playlist:37i9dQZF1EIZoNYWgvuEcy>Amaranthe</a> and more',
       external_urls: {
         spotify: 'https://open.spotify.com/playlist/37i9dQZF1EQpgT26jgbgRI',
       },
@@ -60,7 +63,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MTY3NjE4MTYwMCwwMDAwMDAwMDU1Zjk0NDU3ZGJiODczNzRiNDZiNjZmZjRjYzExMTE5',
+      snapshot_id:
+        'MTY3NjE4MTYwMCwwMDAwMDAwMDU1Zjk0NDU3ZGJiODczNzRiNDZiNjZmZjRjYzExMTE5',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/37i9dQZF1EQpgT26jgbgRI/tracks',
         total: 50,
@@ -70,7 +74,8 @@ const base = {
     },
     {
       collaborative: false,
-      description: '<a href=spotify:playlist:37i9dQZF1EIXQzODTgQBfd>Kenny Wayne Shepherd</a>, <a href=spotify:playlist:37i9dQZF1EIYwzo1whSdbq>Black Pistol Fire</a>, <a href=spotify:playlist:37i9dQZF1EIWS9TPMaOUkB>The Bones of J.R. Jones</a> and more',
+      description:
+        '<a href=spotify:playlist:37i9dQZF1EIXQzODTgQBfd>Kenny Wayne Shepherd</a>, <a href=spotify:playlist:37i9dQZF1EIYwzo1whSdbq>Black Pistol Fire</a>, <a href=spotify:playlist:37i9dQZF1EIWS9TPMaOUkB>The Bones of J.R. Jones</a> and more',
       external_urls: {
         spotify: 'https://open.spotify.com/playlist/37i9dQZF1EQpz3DZCEoX3g',
       },
@@ -94,7 +99,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MTY3NjE4MTYwMCwwMDAwMDAwMGI2MDI5OGJjNzEyNWRiYmNjZWIxYTI5OWEwM2I5MDMz',
+      snapshot_id:
+        'MTY3NjE4MTYwMCwwMDAwMDAwMGI2MDI5OGJjNzEyNWRiYmNjZWIxYTI5OWEwM2I5MDMz',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/37i9dQZF1EQpz3DZCEoX3g/tracks',
         total: 50,
@@ -104,7 +110,8 @@ const base = {
     },
     {
       collaborative: false,
-      description: '<a href=spotify:playlist:37i9dQZF1EIUUcvIysjuWU>Mötley Crüe</a>, <a href=spotify:playlist:37i9dQZF1EIWri12YbtLJp>AC/DC</a>, <a href=spotify:playlist:37i9dQZF1EIYNdvL7KIKmv>Sammy Hagar</a> and more',
+      description:
+        '<a href=spotify:playlist:37i9dQZF1EIUUcvIysjuWU>Mötley Crüe</a>, <a href=spotify:playlist:37i9dQZF1EIWri12YbtLJp>AC/DC</a>, <a href=spotify:playlist:37i9dQZF1EIYNdvL7KIKmv>Sammy Hagar</a> and more',
       external_urls: {
         spotify: 'https://open.spotify.com/playlist/37i9dQZF1EQpj7X7UK8OOF',
       },
@@ -128,7 +135,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MTY3NjE4MTYwMCwwMDAwMDAwMDIxMDQ2YTQ1ZGE3MzcxMmNjMzdlYzk3NzNhNzIzNzYx',
+      snapshot_id:
+        'MTY3NjE4MTYwMCwwMDAwMDAwMDIxMDQ2YTQ1ZGE3MzcxMmNjMzdlYzk3NzNhNzIzNzYx',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/37i9dQZF1EQpj7X7UK8OOF/tracks',
         total: 50,
@@ -172,7 +180,8 @@ const base = {
       },
       primary_color: null,
       public: true,
-      snapshot_id: 'MTYsYjU4NmY4M2QyZDkxNTcwYjhkNDQ1YTNhMGYyM2YwMDA0YTIxYmFjNg==',
+      snapshot_id:
+        'MTYsYjU4NmY4M2QyZDkxNTcwYjhkNDQ1YTNhMGYyM2YwMDA0YTIxYmFjNg==',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/21SupvNU7AndigMFNqTsZ4/tracks',
         total: 335,
@@ -216,7 +225,8 @@ const base = {
       },
       primary_color: null,
       public: true,
-      snapshot_id: 'NDYsYzg5ZjNjMmI0M2UyZGZkZDEzYTMxNzcxYThmYzEyZDA0YWM5MTUyOA==',
+      snapshot_id:
+        'NDYsYzg5ZjNjMmI0M2UyZGZkZDEzYTMxNzcxYThmYzEyZDA0YWM5MTUyOA==',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/00wVUAJyFGP4I7t8gZ0EId/tracks',
         total: 45,
@@ -260,7 +270,8 @@ const base = {
       },
       primary_color: null,
       public: true,
-      snapshot_id: 'MjMsOGY3OWU0YzM0ODRkMGEzZGY5MmI5YTA4N2EyOTAwYmYwYjc5ZDVkNw==',
+      snapshot_id:
+        'MjMsOGY3OWU0YzM0ODRkMGEzZGY5MmI5YTA4N2EyOTAwYmYwYjc5ZDVkNw==',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/0mDxkT99KDev7SkdAF43NR/tracks',
         total: 20,
@@ -270,7 +281,8 @@ const base = {
     },
     {
       collaborative: false,
-      description: 'You are sipping on your coffee in a café in Paris while a Jazz band plays somewhere in the background. ',
+      description:
+        'You are sipping on your coffee in a café in Paris while a Jazz band plays somewhere in the background. ',
       external_urls: {
         spotify: 'https://open.spotify.com/playlist/37i9dQZF1DXbehaqJzJXqw',
       },
@@ -279,7 +291,7 @@ const base = {
       images: [
         {
           height: null,
-          url: 'https://i.scdn.co/image/ab67706f000000037b0d0ae12b71cc2a03be21c1',
+          url: '//localhost:3000/media/cached/ab67706f000000037b0d0ae12b71cc2a03be21c1.jpeg',
           width: null,
         },
       ],
@@ -294,7 +306,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MTY3NTc3MTU1MywwMDAwMDAwMDFmMzQxYzI1YzJmNTJjN2YwZTk0NzE1Mjk3NmFkZTc3',
+      snapshot_id:
+        'MTY3NTc3MTU1MywwMDAwMDAwMDFmMzQxYzI1YzJmNTJjN2YwZTk0NzE1Mjk3NmFkZTc3',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/37i9dQZF1DXbehaqJzJXqw/tracks',
         total: 100,
@@ -313,7 +326,7 @@ const base = {
       images: [
         {
           height: null,
-          url: 'https://i.scdn.co/image/ab67706c0000bebbf14a94179dbdfe55eae2a896',
+          url: '//localhost:3000/media/cached/ab67706c0000bebbf14a94179dbdfe55eae2a896.jpeg',
           width: null,
         },
       ],
@@ -328,7 +341,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MjM2LGNhMWVhOGUxY2Q0NDY1MzExYzQ2MmMxZTAxMTUyMzhkNzgxMGY5ZTg=',
+      snapshot_id:
+        'MjM2LGNhMWVhOGUxY2Q0NDY1MzExYzQ2MmMxZTAxMTUyMzhkNzgxMGY5ZTg=',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/2wpDMLYZ4FLQLNtfFwHqo4/tracks',
         total: 226,
@@ -338,7 +352,8 @@ const base = {
     },
     {
       collaborative: false,
-      description: 'Equal parts nostalgic synthwave sounds and modern production.',
+      description:
+        'Equal parts nostalgic synthwave sounds and modern production.',
       external_urls: {
         spotify: 'https://open.spotify.com/playlist/37i9dQZF1DXdLEN7aqioXM',
       },
@@ -347,7 +362,7 @@ const base = {
       images: [
         {
           height: null,
-          url: 'https://i.scdn.co/image/ab67706f000000039e1d309b5c071ea06cb32103',
+          url: '//localhost:3000/media/cached/ab67706f000000039e1d309b5c071ea06cb32103.jpeg',
           width: null,
         },
       ],
@@ -362,7 +377,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MTY3NTk0NjEwNSwwMDAwMDAwMDM1ZjdiM2UyNTViYzI5ZjBhZTk1OTE4YmM3YmM1OGRl',
+      snapshot_id:
+        'MTY3NTk0NjEwNSwwMDAwMDAwMDM1ZjdiM2UyNTViYzI5ZjBhZTk1OTE4YmM3YmM1OGRl',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/37i9dQZF1DXdLEN7aqioXM/tracks',
         total: 150,
@@ -381,7 +397,7 @@ const base = {
       images: [
         {
           height: null,
-          url: 'https://i.scdn.co/image/ab67706c0000bebbaea87ae37ab55895c49da401',
+          url: '//localhost:3000/media/cached/ab67706c0000bebbaea87ae37ab55895c49da401.jpeg',
           width: null,
         },
       ],
@@ -398,7 +414,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'NDEsN2E0YWQ3ZDJhNjU3MjE0YmE5ZWRhMDY5ODIwNjg2Y2RlYzE2ZWVhMA==',
+      snapshot_id:
+        'NDEsN2E0YWQ3ZDJhNjU3MjE0YmE5ZWRhMDY5ODIwNjg2Y2RlYzE2ZWVhMA==',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/7D6ZFNvTyY6m5wlhetAYem/tracks',
         total: 87,
@@ -417,7 +434,7 @@ const base = {
       images: [
         {
           height: null,
-          url: 'https://i.scdn.co/image/ab67706c0000bebba419cae61e54b92b9fe20311',
+          url: '//localhost:3000/media/cached/ab67706c0000bebba419cae61e54b92b9fe20311.jpeg',
           width: null,
         },
       ],
@@ -434,7 +451,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'NjcyLGJiOTUzNjEwZDY4N2Y1YmYzZjE0MGY5MDRjMmYyMzczMWNlMmNlZmI=',
+      snapshot_id:
+        'NjcyLGJiOTUzNjEwZDY4N2Y1YmYzZjE0MGY5MDRjMmYyMzczMWNlMmNlZmI=',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/73kxCYYtOBbq2CI85qzI7Z/tracks',
         total: 398,
@@ -478,7 +496,8 @@ const base = {
       },
       primary_color: null,
       public: true,
-      snapshot_id: 'MjgsOWQ0NjM4Y2VlODhjNDRjOTQzMDY5MzM3NzNhOGFkMjRmOTlkZDRiZQ==',
+      snapshot_id:
+        'MjgsOWQ0NjM4Y2VlODhjNDRjOTQzMDY5MzM3NzNhOGFkMjRmOTlkZDRiZQ==',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/0IfP7zvUJwLbdpWVuk3M17/tracks',
         total: 27,
@@ -488,7 +507,8 @@ const base = {
     },
     {
       collaborative: false,
-      description: 'For those who love METAL + ORCHESTRA! Old Classics and New Hits - all in one playlist!',
+      description:
+        'For those who love METAL + ORCHESTRA! Old Classics and New Hits - all in one playlist!',
       external_urls: {
         spotify: 'https://open.spotify.com/playlist/2yCqbxs4ztf1kmRTIIujeo',
       },
@@ -497,7 +517,7 @@ const base = {
       images: [
         {
           height: null,
-          url: 'https://i.scdn.co/image/ab67706c0000bebb74d51a398140beb8511b556d',
+          url: '//localhost:3000/media/cached/ab67706c0000bebb74d51a398140beb8511b556d.jpeg',
           width: null,
         },
       ],
@@ -514,7 +534,8 @@ const base = {
       },
       primary_color: null,
       public: true,
-      snapshot_id: 'MzcwLGYyZGYxNTNhNjUwNjVlOTMzOGFkMjdhYTJkMjk5YjdkZTllOWMxNmY=',
+      snapshot_id:
+        'MzcwLGYyZGYxNTNhNjUwNjVlOTMzOGFkMjdhYTJkMjk5YjdkZTllOWMxNmY=',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/2yCqbxs4ztf1kmRTIIujeo/tracks',
         total: 112,
@@ -533,7 +554,7 @@ const base = {
       images: [
         {
           height: null,
-          url: 'https://i.scdn.co/image/ab67706c0000bebb56e45a50cae4ec3792347481',
+          url: '//localhost:3000/media/cached/ab67706c0000bebb56e45a50cae4ec3792347481.jpeg',
           width: null,
         },
       ],
@@ -550,7 +571,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MTU1LDUxMzY2ZDg0YTIzMDkxMjI0MDdjMTVjYWU4YzNiMmY0ZDc2NDM4ZmI=',
+      snapshot_id:
+        'MTU1LDUxMzY2ZDg0YTIzMDkxMjI0MDdjMTVjYWU4YzNiMmY0ZDc2NDM4ZmI=',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/7Gjfs4PhOpEOdFBhXJzsZ8/tracks',
         total: 84,
@@ -560,7 +582,8 @@ const base = {
     },
     {
       collaborative: false,
-      description: 'A massive selection of combat music for any tabletop game. No lyrics (mostly), includes soundtracks from games, movies, and TV shows. ',
+      description:
+        'A massive selection of combat music for any tabletop game. No lyrics (mostly), includes soundtracks from games, movies, and TV shows. ',
       external_urls: {
         spotify: 'https://open.spotify.com/playlist/4LcqqIKfJi9119LdqFleVD',
       },
@@ -596,7 +619,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'NTMzLDI1MmZhNjM3ZjM0MjE4MWMyYmE1YWVmNjVhOWE3YWUzMjNiM2FkY2M=',
+      snapshot_id:
+        'NTMzLDI1MmZhNjM3ZjM0MjE4MWMyYmE1YWVmNjVhOWE3YWUzMjNiM2FkY2M=',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/4LcqqIKfJi9119LdqFleVD/tracks',
         total: 401,
@@ -640,7 +664,8 @@ const base = {
       },
       primary_color: null,
       public: true,
-      snapshot_id: 'MjIsNTNjZTZkZjBjNmM0MDFhN2Q3OTM4MzFlNmUwODdkOTkwNTBhMGZjOA==',
+      snapshot_id:
+        'MjIsNTNjZTZkZjBjNmM0MDFhN2Q3OTM4MzFlNmUwODdkOTkwNTBhMGZjOA==',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/2XEagIHbL1pzbDSB9VNm44/tracks',
         total: 21,
@@ -684,7 +709,8 @@ const base = {
       },
       primary_color: null,
       public: true,
-      snapshot_id: 'MjMsY2U3OWM2NzZhYjYzZWM5ODIwY2U2MGVlZjYyNjVkNDA5YjVkYjJlZg==',
+      snapshot_id:
+        'MjMsY2U3OWM2NzZhYjYzZWM5ODIwY2U2MGVlZjYyNjVkNDA5YjVkYjJlZg==',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/7sL7I6MRGjAxUGLPQlCGx1/tracks',
         total: 70,
@@ -718,7 +744,8 @@ const base = {
       },
       primary_color: null,
       public: false,
-      snapshot_id: 'MTY3NjIzODMzNSwwMDAwMDAwMDA2YzcyOTU3OGE3OTFjNjkyODllY2Q1NjQxNDcxMzZm',
+      snapshot_id:
+        'MTY3NjIzODMzNSwwMDAwMDAwMDA2YzcyOTU3OGE3OTFjNjkyODllY2Q1NjQxNDcxMzZm',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/37i9dQZF1E8EUxavD3Is7t/tracks',
         total: 50,
@@ -762,7 +789,8 @@ const base = {
       },
       primary_color: null,
       public: true,
-      snapshot_id: 'MzQxLDBmYmYxMzQ0OTdlMTlkMDRmN2EyMjcwNjU0NzlhNGIzNDBlZmU3Njk=',
+      snapshot_id:
+        'MzQxLDBmYmYxMzQ0OTdlMTlkMDRmN2EyMjcwNjU0NzlhNGIzNDBlZmU3Njk=',
       tracks: {
         href: 'https://api.spotify.com/v1/playlists/1HsHrHEVQsvOfbayeeKllZ/tracks',
         total: 375,
@@ -774,6 +802,39 @@ const base = {
   artistSearchResults: [
     {
       external_urls: {
+        spotify: 'https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02',
+      },
+      followers: {
+        href: null,
+        total: 68621410,
+      },
+      genres: ['pop'],
+      href: 'https://api.spotify.com/v1/artists/06HL4z0CvFAxyc27GXpf02',
+      id: '06HL4z0CvFAxyc27GXpf02',
+      images: [
+        {
+          height: 640,
+          url: '//localhost:3000/media/cached/ab6761610000e5eb5a00969a4698c3132a15fbb0.jpeg',
+          width: 640,
+        },
+        {
+          height: 320,
+          url: '//localhost:3000/media/cached/ab676161000051745a00969a4698c3132a15fbb0.jpeg',
+          width: 320,
+        },
+        {
+          height: 160,
+          url: '//localhost:3000/media/cached/ab6761610000f1785a00969a4698c3132a15fbb0.jpeg',
+          width: 160,
+        },
+      ],
+      name: 'Taylor Swift',
+      popularity: 99,
+      type: 'artist',
+      uri: 'spotify:artist:06HL4z0CvFAxyc27GXpf02',
+    },
+    {
+      external_urls: {
         spotify: 'https://open.spotify.com/artist/7Ey4PD4MYsKc5I2dolUwbH',
       },
       followers: { href: null, total: 13129965 },
@@ -783,17 +844,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebc5733401b4689b2064458e7d',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebc5733401b4689b2064458e7d.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174c5733401b4689b2064458e7d',
+          url: '//localhost:3000/media/cached/ab67616100005174c5733401b4689b2064458e7d.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178c5733401b4689b2064458e7d',
+          url: '//localhost:3000/media/cached/ab6761610000f178c5733401b4689b2064458e7d.jpeg',
           width: 160,
         },
       ],
@@ -813,17 +874,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebaedf866bc2eff6fae08577d9',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebaedf866bc2eff6fae08577d9.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174aedf866bc2eff6fae08577d9',
+          url: '//localhost:3000/media/cached/ab67616100005174aedf866bc2eff6fae08577d9.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178aedf866bc2eff6fae08577d9',
+          url: '//localhost:3000/media/cached/ab6761610000f178aedf866bc2eff6fae08577d9.jpeg',
           width: 160,
         },
       ],
@@ -837,23 +898,32 @@ const base = {
         spotify: 'https://open.spotify.com/artist/4tX2TplrkIP4v05BNC903e',
       },
       followers: { href: null, total: 2456106 },
-      genres: ['album rock', 'classic rock', 'folk rock', 'heartland rock', 'mellow gold', 'pop rock', 'rock', 'soft rock'],
+      genres: [
+        'album rock',
+        'classic rock',
+        'folk rock',
+        'heartland rock',
+        'mellow gold',
+        'pop rock',
+        'rock',
+        'soft rock',
+      ],
       href: 'https://api.spotify.com/v1/artists/4tX2TplrkIP4v05BNC903e',
       id: '4tX2TplrkIP4v05BNC903e',
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebfabc6315ae43968729ce9e36',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebfabc6315ae43968729ce9e36.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174fabc6315ae43968729ce9e36',
+          url: '//localhost:3000/media/cached/ab67616100005174fabc6315ae43968729ce9e36.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178fabc6315ae43968729ce9e36',
+          url: '//localhost:3000/media/cached/ab6761610000f178fabc6315ae43968729ce9e36.jpeg',
           width: 160,
         },
       ],
@@ -873,17 +943,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebc4c77549095c86acb4e77b37',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebc4c77549095c86acb4e77b37.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174c4c77549095c86acb4e77b37',
+          url: '//localhost:3000/media/cached/ab67616100005174c4c77549095c86acb4e77b37.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178c4c77549095c86acb4e77b37',
+          url: '//localhost:3000/media/cached/ab6761610000f178c4c77549095c86acb4e77b37.jpeg',
           width: 160,
         },
       ],
@@ -897,23 +967,34 @@ const base = {
         spotify: 'https://open.spotify.com/artist/2UZMlIwnkgAEDBsw1Rejkn',
       },
       followers: { href: null, total: 2128971 },
-      genres: ['album rock', 'classic rock', 'country rock', 'folk rock', 'heartland rock', 'mellow gold', 'pop rock', 'rock', 'singer-songwriter', 'soft rock'],
+      genres: [
+        'album rock',
+        'classic rock',
+        'country rock',
+        'folk rock',
+        'heartland rock',
+        'mellow gold',
+        'pop rock',
+        'rock',
+        'singer-songwriter',
+        'soft rock',
+      ],
       href: 'https://api.spotify.com/v1/artists/2UZMlIwnkgAEDBsw1Rejkn',
       id: '2UZMlIwnkgAEDBsw1Rejkn',
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eba56c2e176f0626e2a001431f',
+          url: '//localhost:3000/media/cached/ab6761610000e5eba56c2e176f0626e2a001431f.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174a56c2e176f0626e2a001431f',
+          url: '//localhost:3000/media/cached/ab67616100005174a56c2e176f0626e2a001431f.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178a56c2e176f0626e2a001431f',
+          url: '//localhost:3000/media/cached/ab6761610000f178a56c2e176f0626e2a001431f.jpeg',
           width: 160,
         },
       ],
@@ -933,22 +1014,22 @@ const base = {
       images: [
         {
           height: 806,
-          url: 'https://i.scdn.co/image/b040846ceba13c3e9c125d68389491094e7f2982',
+          url: '//localhost:3000/media/cached/b040846ceba13c3e9c125d68389491094e7f2982.jpeg',
           width: 999,
         },
         {
           height: 516,
-          url: 'https://i.scdn.co/image/af2b8e57f6d7b5d43a616bd1e27ba552cd8bfd42',
+          url: '//localhost:3000/media/cached/af2b8e57f6d7b5d43a616bd1e27ba552cd8bfd42.jpeg',
           width: 640,
         },
         {
           height: 161,
-          url: 'https://i.scdn.co/image/c06971e9ff81696699b829484e3be165f4e64368',
+          url: '//localhost:3000/media/cached/c06971e9ff81696699b829484e3be165f4e64368.jpeg',
           width: 200,
         },
         {
           height: 52,
-          url: 'https://i.scdn.co/image/6dd0ffd270903d1884edf9058c49f58b03db893d',
+          url: '//localhost:3000/media/cached/6dd0ffd270903d1884edf9058c49f58b03db893d.jpeg',
           width: 64,
         },
       ],
@@ -968,17 +1049,17 @@ const base = {
       images: [
         {
           height: 600,
-          url: 'https://i.scdn.co/image/207803ce008388d3427a685254f9de6a8f61dc2e',
+          url: '//localhost:3000/media/cached/207803ce008388d3427a685254f9de6a8f61dc2e.jpeg',
           width: 600,
         },
         {
           height: 200,
-          url: 'https://i.scdn.co/image/b0248a44865493e6a03832aa89854ada16ff07a8',
+          url: '//localhost:3000/media/cached/b0248a44865493e6a03832aa89854ada16ff07a8.jpeg',
           width: 200,
         },
         {
           height: 64,
-          url: 'https://i.scdn.co/image/16eb3cdae0d824b520ac17710e943a99d3ef6602',
+          url: '//localhost:3000/media/cached/16eb3cdae0d824b520ac17710e943a99d3ef6602.jpeg',
           width: 64,
         },
       ],
@@ -998,17 +1079,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebb5b52f7e13f720c7a4856306',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebb5b52f7e13f720c7a4856306.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174b5b52f7e13f720c7a4856306',
+          url: '//localhost:3000/media/cached/ab67616100005174b5b52f7e13f720c7a4856306.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178b5b52f7e13f720c7a4856306',
+          url: '//localhost:3000/media/cached/ab6761610000f178b5b52f7e13f720c7a4856306.jpeg',
           width: 160,
         },
       ],
@@ -1028,17 +1109,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebd8475001d2700686e1008dfb',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebd8475001d2700686e1008dfb.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174d8475001d2700686e1008dfb',
+          url: '//localhost:3000/media/cached/ab67616100005174d8475001d2700686e1008dfb.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178d8475001d2700686e1008dfb',
+          url: '//localhost:3000/media/cached/ab6761610000f178d8475001d2700686e1008dfb.jpeg',
           width: 160,
         },
       ],
@@ -1052,23 +1133,29 @@ const base = {
         spotify: 'https://open.spotify.com/artist/7sMcWECQxLm7EoKdRlSCAn',
       },
       followers: { href: null, total: 54323 },
-      genres: ['deep new americana', 'modern blues rock', 'new americana', 'roots rock', 'stomp and holler'],
+      genres: [
+        'deep new americana',
+        'modern blues rock',
+        'new americana',
+        'roots rock',
+        'stomp and holler',
+      ],
       href: 'https://api.spotify.com/v1/artists/7sMcWECQxLm7EoKdRlSCAn',
       id: '7sMcWECQxLm7EoKdRlSCAn',
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eb045d5ca9454b3e254e1d8728',
+          url: '//localhost:3000/media/cached/ab6761610000e5eb045d5ca9454b3e254e1d8728.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174045d5ca9454b3e254e1d8728',
+          url: '//localhost:3000/media/cached/ab67616100005174045d5ca9454b3e254e1d8728.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178045d5ca9454b3e254e1d8728',
+          url: '//localhost:3000/media/cached/ab6761610000f178045d5ca9454b3e254e1d8728.jpeg',
           width: 160,
         },
       ],
@@ -1082,23 +1169,33 @@ const base = {
         spotify: 'https://open.spotify.com/artist/2Hkut4rAAyrQxRdof7FVJq',
       },
       followers: { href: null, total: 2044306 },
-      genres: ['album rock', 'art rock', 'canadian metal', 'classic canadian rock', 'classic rock', 'hard rock', 'metal', 'progressive rock', 'rock'],
+      genres: [
+        'album rock',
+        'art rock',
+        'canadian metal',
+        'classic canadian rock',
+        'classic rock',
+        'hard rock',
+        'metal',
+        'progressive rock',
+        'rock',
+      ],
       href: 'https://api.spotify.com/v1/artists/2Hkut4rAAyrQxRdof7FVJq',
       id: '2Hkut4rAAyrQxRdof7FVJq',
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eb896c4b043fb3063178afd716',
+          url: '//localhost:3000/media/cached/ab6761610000e5eb896c4b043fb3063178afd716.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174896c4b043fb3063178afd716',
+          url: '//localhost:3000/media/cached/ab67616100005174896c4b043fb3063178afd716.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178896c4b043fb3063178afd716',
+          url: '//localhost:3000/media/cached/ab6761610000f178896c4b043fb3063178afd716.jpeg',
           width: 160,
         },
       ],
@@ -1118,17 +1215,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebab0922f900e6c22b8ef4c01c',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebab0922f900e6c22b8ef4c01c.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174ab0922f900e6c22b8ef4c01c',
+          url: '//localhost:3000/media/cached/ab67616100005174ab0922f900e6c22b8ef4c01c.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178ab0922f900e6c22b8ef4c01c',
+          url: '//localhost:3000/media/cached/ab6761610000f178ab0922f900e6c22b8ef4c01c.jpeg',
           width: 160,
         },
       ],
@@ -1148,17 +1245,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eb18410be0ab6355af4422763d',
+          url: '//localhost:3000/media/cached/ab6761610000e5eb18410be0ab6355af4422763d.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab6761610000517418410be0ab6355af4422763d',
+          url: '//localhost:3000/media/cached/ab6761610000517418410be0ab6355af4422763d.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f17818410be0ab6355af4422763d',
+          url: '//localhost:3000/media/cached/ab6761610000f17818410be0ab6355af4422763d.jpeg',
           width: 160,
         },
       ],
@@ -1178,17 +1275,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eba036cf8a81e30b81b76ab056',
+          url: '//localhost:3000/media/cached/ab6761610000e5eba036cf8a81e30b81b76ab056.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174a036cf8a81e30b81b76ab056',
+          url: '//localhost:3000/media/cached/ab67616100005174a036cf8a81e30b81b76ab056.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178a036cf8a81e30b81b76ab056',
+          url: '//localhost:3000/media/cached/ab6761610000f178a036cf8a81e30b81b76ab056.jpeg',
           width: 160,
         },
       ],
@@ -1208,17 +1305,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5ebd1685a718135c64d378146e9',
+          url: '//localhost:3000/media/cached/ab6761610000e5ebd1685a718135c64d378146e9.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab67616100005174d1685a718135c64d378146e9',
+          url: '//localhost:3000/media/cached/ab67616100005174d1685a718135c64d378146e9.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f178d1685a718135c64d378146e9',
+          url: '//localhost:3000/media/cached/ab6761610000f178d1685a718135c64d378146e9.jpeg',
           width: 160,
         },
       ],
@@ -1238,17 +1335,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eb0b8d424042d51bb8ee412ffe',
+          url: '//localhost:3000/media/cached/ab6761610000e5eb0b8d424042d51bb8ee412ffe.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab676161000051740b8d424042d51bb8ee412ffe',
+          url: '//localhost:3000/media/cached/ab676161000051740b8d424042d51bb8ee412ffe.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f1780b8d424042d51bb8ee412ffe',
+          url: '//localhost:3000/media/cached/ab6761610000f1780b8d424042d51bb8ee412ffe.jpeg',
           width: 160,
         },
       ],
@@ -1268,17 +1365,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eb2e274deb3b6033e3df4ba324',
+          url: '//localhost:3000/media/cached/ab6761610000e5eb2e274deb3b6033e3df4ba324.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab676161000051742e274deb3b6033e3df4ba324',
+          url: '//localhost:3000/media/cached/ab676161000051742e274deb3b6033e3df4ba324.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f1782e274deb3b6033e3df4ba324',
+          url: '//localhost:3000/media/cached/ab6761610000f1782e274deb3b6033e3df4ba324.jpeg',
           width: 160,
         },
       ],
@@ -1298,17 +1395,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eb50defaf9fc059a1efc541f4c',
+          url: '//localhost:3000/media/cached/ab6761610000e5eb50defaf9fc059a1efc541f4c.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab6761610000517450defaf9fc059a1efc541f4c',
+          url: '//localhost:3000/media/cached/ab6761610000517450defaf9fc059a1efc541f4c.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f17850defaf9fc059a1efc541f4c',
+          url: '//localhost:3000/media/cached/ab6761610000f17850defaf9fc059a1efc541f4c.jpeg',
           width: 160,
         },
       ],
@@ -1328,17 +1425,17 @@ const base = {
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab6761610000e5eb8e19de59bac2628eb8929156',
+          url: '//localhost:3000/media/cached/ab6761610000e5eb8e19de59bac2628eb8929156.jpeg',
           width: 640,
         },
         {
           height: 320,
-          url: 'https://i.scdn.co/image/ab676161000051748e19de59bac2628eb8929156',
+          url: '//localhost:3000/media/cached/ab676161000051748e19de59bac2628eb8929156.jpeg',
           width: 320,
         },
         {
           height: 160,
-          url: 'https://i.scdn.co/image/ab6761610000f1788e19de59bac2628eb8929156',
+          url: '//localhost:3000/media/cached/ab6761610000f1788e19de59bac2628eb8929156.jpeg',
           width: 160,
         },
       ],
@@ -1352,23 +1449,27 @@ const base = {
         spotify: 'https://open.spotify.com/artist/13kMpt8IdcHcdxPLcJrgU2',
       },
       followers: { href: null, total: 93231 },
-      genres: ['indie game soundtrack', 'oceania soundtrack', 'video game music'],
+      genres: [
+        'indie game soundtrack',
+        'oceania soundtrack',
+        'video game music',
+      ],
       href: 'https://api.spotify.com/v1/artists/13kMpt8IdcHcdxPLcJrgU2',
       id: '13kMpt8IdcHcdxPLcJrgU2',
       images: [
         {
           height: 640,
-          url: 'https://i.scdn.co/image/ab67616d0000b273164ec11a1225d579ed030c42',
+          url: '//localhost:3000/media/cached/ab67616d0000b273164ec11a1225d579ed030c42.jpeg',
           width: 640,
         },
         {
           height: 300,
-          url: 'https://i.scdn.co/image/ab67616d00001e02164ec11a1225d579ed030c42',
+          url: '//localhost:3000/media/cached/ab67616d00001e02164ec11a1225d579ed030c42.jpeg',
           width: 300,
         },
         {
           height: 64,
-          url: 'https://i.scdn.co/image/ab67616d00004851164ec11a1225d579ed030c42',
+          url: '//localhost:3000/media/cached/ab67616d00004851164ec11a1225d579ed030c42.jpeg',
           width: 64,
         },
       ],
@@ -1376,6 +1477,72 @@ const base = {
       popularity: 61,
       type: 'artist',
       uri: 'spotify:artist:13kMpt8IdcHcdxPLcJrgU2',
+    },
+    {
+      external_urls: {
+        spotify: 'https://open.spotify.com/artist/1KP6TWI40m7p3QBTU6u2xo',
+      },
+      followers: {
+        href: null,
+        total: 1119211,
+      },
+      genres: ['modern rock', 'pop'],
+      href: 'https://api.spotify.com/v1/artists/1KP6TWI40m7p3QBTU6u2xo',
+      id: '1KP6TWI40m7p3QBTU6u2xo',
+      images: [
+        {
+          height: 640,
+          url: '//localhost:3000/media/cached/ab6761610000e5eb6308e79c621076395807b455.jpeg',
+          width: 640,
+        },
+        {
+          height: 320,
+          url: '//localhost:3000/media/cached/ab676161000051746308e79c621076395807b455.jpeg',
+          width: 320,
+        },
+        {
+          height: 160,
+          url: '//localhost:3000/media/cached/ab6761610000f1786308e79c621076395807b455.jpeg',
+          width: 160,
+        },
+      ],
+      name: 'BØRNS',
+      popularity: 69,
+      type: 'artist',
+      uri: 'spotify:artist:1KP6TWI40m7p3QBTU6u2xo',
+    },
+    {
+      external_urls: {
+        spotify: 'https://open.spotify.com/artist/3886aFez2HDLkio5tUzmP6',
+      },
+      followers: {
+        href: null,
+        total: 379353,
+      },
+      genres: ['alternative metal', 'nu metal', 'post-grunge'],
+      href: 'https://api.spotify.com/v1/artists/3886aFez2HDLkio5tUzmP6',
+      id: '3886aFez2HDLkio5tUzmP6',
+      images: [
+        {
+          height: 640,
+          url: '//localhost:3000/media/cached/ab6761610000e5ebfbe3966172a4e2395f3f7daa.jpeg',
+          width: 640,
+        },
+        {
+          height: 320,
+          url: '//localhost:3000/media/cached/ab67616100005174fbe3966172a4e2395f3f7daa.jpeg',
+          width: 320,
+        },
+        {
+          height: 160,
+          url: '//localhost:3000/media/cached/ab6761610000f178fbe3966172a4e2395f3f7daa.jpeg',
+          width: 160,
+        },
+      ],
+      name: 'Sixx:A.M.',
+      popularity: 54,
+      type: 'artist',
+      uri: 'spotify:artist:3886aFez2HDLkio5tUzmP6',
     },
   ],
 };
