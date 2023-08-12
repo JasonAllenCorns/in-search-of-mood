@@ -2,37 +2,24 @@
   "name": "in-search-of-mood",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": ">=18.4.0"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prettify": "prettier --write .",
-    "prepare": "husky instal"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/server": "^11.10.0",
-    "@emotion/styled": "^11.10.5",
-    "@mui/icons-material": "^5.11.0",
-    "@mui/lab": "^5.0.0-alpha.119",
-    "@mui/material": "^5.11.7",
-    "@next/font": "13.1.6",
-    "next": "13.1.6",
-    "next-auth": "^4.19.1",
+    "@types/node": "20.4.10",
+    "@types/react": "18.2.20",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.13",
+    "next": "13.4.13",
+    "postcss": "8.4.27",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "spotify-web-api-node": "^5.0.2"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^17.4.2",
-    "@commitlint/config-conventional": "^17.4.2",
-    "eslint": "^8.33.0",
-    "eslint-config-next": "^13.1.6",
-    "husky": "^8.0.3",
-    "prettier": "^2.8.4"
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
   }
 }
