@@ -1,5 +1,4 @@
-import NextAuth, { Account, NextAuthOptions, Profile, Session, User } from 'next-auth';
-import { AdapterAccount } from 'next-auth/adapters';
+import NextAuth, { NextAuthOptions, Session } from 'next-auth';
 import { JWT } from 'next-auth/jwt';
 import SpotifyProvider from 'next-auth/providers/spotify';
 
@@ -13,9 +12,9 @@ const clientSecret: string = process.env.SPOTIFY_CLIENT_SECRET || "";
 export type SignedAuthOptions = NextAuthOptions & {
   jwt: {
     signingKey: {
-      kty: "RSA" | "EC" | "OKP" | "oct",
+      kty: "oct",
       kid: string,
-      alg: "HS512" | "HS256" | "RS256",
+      alg: "HS512",
       k: string
     }
   }
