@@ -1,5 +1,5 @@
 import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/api/auth/[...nextauth]/authOptions";
+import { authOptions } from "./api/auth/[...nextauth]/authOptions";
 import Link from "next/link";
 import type { Metadata, ResolvingMetadata } from "next";
 
@@ -8,8 +8,8 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const session = await getServerSession(authOptions);
   return {
-    title: session?.user ? "Logged in view" : "Logged out view"
-  }
+    title: session?.user ? "Logged in view" : "Logged out view",
+  };
 }
 
 export default async function Home() {
@@ -25,9 +25,14 @@ export default async function Home() {
         </p>
         <div className="mt-4">
           {session && (
-            <p className="text-green-800 text-lg tracking-tight">
-              You are seeing content that is protected.
-            </p>
+            <section>
+              <p className="text-green-800 text-lg tracking-tight">
+                You are seeing content that is protected.
+              </p>
+              <p>
+                <Link href="/api/auth/signout">Sign out</Link>
+              </p>
+            </section>
           )}
         </div>
       </main>
