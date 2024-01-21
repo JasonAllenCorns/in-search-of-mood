@@ -1,5 +1,22 @@
 module.exports = {
   images: {
-    remotePatterns: ["t.scdn.co", "i.scdn.co", "mosaic.scdn.co"],
+    remotePatterns: [
+      {
+        hostname: "t.scdn.co",
+      },
+      {
+        hostname: "i.scdn.co",
+      },
+      {
+        hostname: "mosaic.scdn.co",
+      },
+      {
+        hostname: "localhost"
+      },
+      {
+        protocol: "https",
+        hostname: "**jasonallencorns.vercel.app",
+      }
+    ],
   },
 };
