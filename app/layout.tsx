@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
+import "@radix-ui/themes/styles.css";
 import "../styles/globals.css";
+import { Theme } from "@radix-ui/themes";
+
+// import "../styles/globals.css";
+import GlobalHeader from "./components/GlobalHeader/GlobalHeader";
 
 export const metadata: Metadata = {
   title: { default: "Dashboard", template: "%s | My Website" },
@@ -12,13 +17,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      suppressHydrationWarning
+    >
       <head></head>
       <body>
-        <div>
-          
-        </div>
-        {children}
+        <Theme
+          id="application-root"
+          accentColor="sky"
+          grayColor="slate"
+          appearance="dark"
+          panelBackground="translucent"
+          scaling="100%"
+          radius="full"
+        >
+          <GlobalHeader />
+          {children}
+        </Theme>
       </body>
     </html>
   );
