@@ -1,14 +1,12 @@
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "./api/auth/[...nextauth]/authOptions";
 import Link from "next/link";
-import type { Metadata, ResolvingMetadata } from "next";
-import { Box, Card, Container, Flex, Grid } from "@radix-ui/themes";
+import type { Metadata } from "next";
+import { Container } from "@radix-ui/themes";
 
 // component rendering
 
-export async function generateMetadata(
-  parent: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   const session = await getServerSession(authOptions);
   return {
     title: session?.user ? "Logged in view" : "Logged out view",
