@@ -25,14 +25,13 @@ export default function RootLayout({
       <body>
         <Theme
           id="application-root"
-          accentColor="sky"
+          accentColor="indigo"
           grayColor="slate"
           appearance="dark"
           panelBackground="translucent"
           scaling="100%"
           radius="full"
         >
-          <GlobalHeader />
           {children}
         </Theme>
       </body>

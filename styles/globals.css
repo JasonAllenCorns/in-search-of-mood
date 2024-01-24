@@ -1,3 +1,5 @@
+@import '@radix-ui/colors/gray.css';
+@import '@radix-ui/colors/gray-dark.css';
 @import '@radix-ui/colors/black-alpha.css';
 @import '@radix-ui/colors/indigo.css';
 @import '@radix-ui/colors/mauve.css';
@@ -6,6 +8,7 @@
 
 body {
   background-color: #000;
+  min-height: 100vh; /* covers a Radix DropDownMenu bug that reduces content to trigger height */
 }
 
 
@@ -25,4 +28,3 @@ body::before {
   background-repeat: no-repeat;
   z-index: -1;
 }
-

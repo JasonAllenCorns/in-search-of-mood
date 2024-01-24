@@ -24,10 +24,10 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "20.11.5",
     "@types/react": "^18",
     "eslint": "^8",
     "eslint-config-next": "^14.0.4",
-    "typescript": "^5"
+    "typescript": "5.3.3"
   }
 }
