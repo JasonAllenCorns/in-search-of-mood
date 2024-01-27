@@ -33,7 +33,6 @@
     "strictNullChecks": true
   },
   "include": [
-    "middleware.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",

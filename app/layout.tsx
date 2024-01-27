@@ -5,6 +5,7 @@ import { Theme } from "@radix-ui/themes";
 
 // import "../styles/globals.css";
 import GlobalHeader from "./components/GlobalHeader/GlobalHeader";
+import ThemeProvider from "context/ThemeProvider";
 
 export const metadata: Metadata = {
   title: { default: "Dashboard", template: "%s | My Website" },
@@ -22,19 +23,21 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head></head>
-      <body>
-        <Theme
-          id="application-root"
-          accentColor="indigo"
-          grayColor="slate"
-          appearance="dark"
-          panelBackground="translucent"
-          scaling="100%"
-          radius="full"
-        >
-          {children}
-        </Theme>
-      </body>
+      <ThemeProvider>
+        <body>
+          <Theme
+            id="application-root"
+            accentColor="indigo"
+            grayColor="slate"
+            appearance="dark"
+            panelBackground="translucent"
+            scaling="100%"
+            radius="full"
+          >
+            {children}
+          </Theme>
+        </body>
+      </ThemeProvider>
     </html>
   );
 }

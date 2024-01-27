@@ -9,18 +9,18 @@ import {
 } from "@radix-ui/themes";
 import { CaretDownIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
-import styles from "./NavigationMenu.module.css";
+import { SessionToken } from "types/types";
 
 interface Props {
+  token: SessionToken | undefined;
   user?: {
     name?: string | undefined;
     image?: string | undefined;
-    spotifyProfileUrl?: string | undefined;
   };
 }
 
 const GlobalHeader = ({ ...props }: Props) => {
-  const spotifyUrl = props?.user?.spotifyProfileUrl;
+  const spotifyUrl = props?.token?.spotifyProfileUrl;
   const name = props?.user?.name || "N A";
   const image = props?.user?.image || undefined;
 
@@ -34,7 +34,7 @@ const GlobalHeader = ({ ...props }: Props) => {
         gap="3"
         height="9"
         direction={"row-reverse"}
-        style={{paddingTop: "9px", paddingBottom: "9px"}}
+        style={{ paddingTop: "9px", paddingBottom: "9px" }}
       >
         <DropdownMenu.Root>
           <DropdownMenu.Trigger>
@@ -52,11 +52,17 @@ const GlobalHeader = ({ ...props }: Props) => {
             </Button>
           </DropdownMenu.Trigger>
           <DropdownMenu.Content>
-            <DropdownMenu.Item className={styles.DropdownMenuItem}>My playlists</DropdownMenu.Item>
+            <DropdownMenu.Item className="DropdownMenuItem">
+              My playlists
+            </DropdownMenu.Item>
             <DropdownMenu.Separator />
             {spotifyUrl && (
-              <DropdownMenu.Item className={styles.DropdownMenuItem}>
+              <DropdownMenu.Item
+                className="DropdownMenuItem"
+                style={{ flexDirection: "column", alignItems: "stretch" }}
+              >
                 <a
+                  className="accountMenuLink"
                   href={spotifyUrl}
                   target="_blank"
                   rel="noopener noreferrer nofollow"
@@ -65,16 +71,20 @@ const GlobalHeader = ({ ...props }: Props) => {
                 </a>
               </DropdownMenu.Item>
             )}
-            <DropdownMenu.Item className={styles.DropdownMenuItem}>
-              <Link href="/api/auth/signin">Sign out</Link>
+            <DropdownMenu.Item
+              className="DropdownMenuItem"
+              style={{ flexDirection: "column", alignItems: "stretch" }}
+            >
+              <Link
+                href="/api/auth/signin"
+                className="accountMenuLink"
+              >
+                Sign out
+              </Link>
             </DropdownMenu.Item>
           </DropdownMenu.Content>
         </DropdownMenu.Root>
       </Flex>
-      <Flex
-        gap="6"
-        direction="row"
-      ></Flex>
     </Container>
   );
 };
