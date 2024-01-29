@@ -6,6 +6,7 @@ import { Theme } from "@radix-ui/themes";
 // import "../styles/globals.css";
 import GlobalHeader from "./components/GlobalHeader/GlobalHeader";
 import ThemeProvider from "context/ThemeProvider";
+import RecommendationsProvider from "context/RecommendationsProvider";
 
 export const metadata: Metadata = {
   title: { default: "Dashboard", template: "%s | My Website" },
@@ -24,19 +25,21 @@ export default function RootLayout({
     >
       <head></head>
       <ThemeProvider>
-        <body>
-          <Theme
-            id="application-root"
-            accentColor="indigo"
-            grayColor="slate"
-            appearance="dark"
-            panelBackground="translucent"
-            scaling="100%"
-            radius="full"
-          >
-            {children}
-          </Theme>
-        </body>
+        <RecommendationsProvider>
+          <body>
+            <Theme
+              id="application-root"
+              accentColor="indigo"
+              grayColor="slate"
+              appearance="dark"
+              panelBackground="translucent"
+              scaling="100%"
+              radius="large"
+            >
+              {children}
+            </Theme>
+          </body>
+        </RecommendationsProvider>
       </ThemeProvider>
     </html>
   );

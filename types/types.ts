@@ -85,3 +85,28 @@ export type SpotifyPlaylist = {
     "total": 0
   },
 }
+
+
+export interface SpotifyGenre {
+  id: number;
+  value: string;
+};
+export type SpotifyGenres = SpotifyGenre[] | [];
+
+export type SpotifyTrackTempo = {
+  tempo: number;
+}
+
+export interface RecommendationFormState {
+  genres?: SpotifyGenres | [];
+  tempo?: SpotifyTrackTempo;
+}
+export type GetSelectedGenres = () => SpotifyGenres;
+export type SetSelectedGenres = (arg0: SpotifyGenres | []) => void;
+export type RecommendationsFormContext = {
+  // genres: SpotifyGenres;
+  recFormState: RecommendationFormState;
+  saveRecFormState: (recommendationsForm: RecommendationFormState | {}) => void;
+  // getSelectedGenres: GetSelectedGenres;
+  // setSelectedGenres: SetSelectedGenres
+}

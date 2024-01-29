@@ -1,31 +1,40 @@
-import { Container, Flex, Slider, Text } from "@radix-ui/themes";
+"use client"; 
+import * as Form from "@radix-ui/react-form";
+import { RocketIcon } from "@radix-ui/react-icons";
+import { Container } from "@radix-ui/themes";
 
-export default async function TempoSliderComponent() {
+export default function TempoSliderComponent() {
+  const handleTempoChange: (tempo: number | undefined) => void = (tempo) => {
+    console.log("(jason.corns) tempo", tempo);
+  };
   return (
     <Container>
-      <Flex
-        direction="column"
-        align="stretch"
-        justify="center"
-        wrap="nowrap"
-        py="4"
-        style={{ width: "100%" }}
-      >
-        <Slider
-          defaultValue={[50]}
-          variant="surface"
-          radius="small"
-        />
-      </Flex>
-      <Flex
-        direction={"row"}
-        style={{ width: "100%" }}
-        wrap="nowrap"
-        justify="between"
-      >
-        <Text>Slow</Text>
-        <Text>Fast</Text>
-      </Flex>
+      <Form.Field className="FormField" name="tempo">
+        <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
+          <Form.Label className="FormLabel">Tempo</Form.Label>
+          <Form.Message className="FormMessage" match="valueMissing">
+            Please enter your email
+          </Form.Message>
+          <Form.Message className="FormMessage" match="typeMismatch">
+            Please provide a valid email
+          </Form.Message>
+        </div>
+        <Form.Control asChild>
+          <RocketIcon
+            height="16"
+            width="16"
+          />
+          <input
+            type="text"
+            inputMode="numeric"
+            placeholder="Target tempo e.g. 140"
+            onChange={(evt) => {
+              const tempoVal = Math.floor(parseFloat(evt?.target?.value));
+              handleTempoChange(tempoVal);
+            }}
+          />
+        </Form.Control>
+      </Form.Field>
     </Container>
   );
 }
