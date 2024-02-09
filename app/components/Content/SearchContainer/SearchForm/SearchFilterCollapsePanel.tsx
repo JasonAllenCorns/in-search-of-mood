@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import * as Collapsible from "@radix-ui/react-collapsible";
 
 export default function SearchFilterCollapsePanel({
   children,
@@ -8,8 +7,11 @@ export default function SearchFilterCollapsePanel({
   children: React.ReactNode;
 }) {
   return (
-    <Collapsible.Content>
-    {children}
-    </Collapsible.Content>
+    <div>
+      <h4>Collapsible</h4>
+      <hr />
+      {children}
+      <hr />
+    </div>
   );
 }

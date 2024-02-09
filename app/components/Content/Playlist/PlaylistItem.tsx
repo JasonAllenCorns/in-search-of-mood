@@ -1,15 +1,14 @@
 "use client";
-
-import { Avatar, Box, Card, Flex, Text } from "@radix-ui/themes";
+import {Card, CardBody} from "@nextui-org/react";
+import {
+  Avatar,
+} from "@nextui-org/react";
 import { SpotifyPlaylist } from "types/types";
 
 export default function PlaylistItem({ ...props }) {
   const playlist: SpotifyPlaylist = props?.playlist;
   const playlistAvatar: any = {
     src: playlist.images[0].url,
-    size: "4", // radix-ui specific 'size' value
-    radius: "large",
-    fallback: "e",
   };
 
   return (
@@ -17,37 +16,23 @@ export default function PlaylistItem({ ...props }) {
       style={{ maxWidth: 240 }}
       key={playlist.id}
       data-ref={playlist.id}
+      isHoverable={true}
+      isPressable={true}
     >
-      <Flex
-        gap="3"
-        align="center"
-      >
+      <CardBody className="flex flex-row gap-x-3">
         <Avatar
-          size={playlistAvatar.size}
           src={playlistAvatar.src}
-          radius={playlistAvatar.radius}
-          fallback={playlistAvatar.fallback}
+          name={playlist.name || "Playlist"}
         />
-        <Box>
-          <Text
-            as="div"
-            size="2"
-            weight="bold"
-            trim="start"
-            mr="2"
-            style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", maxWidth: "160px" }}
-          >
+        <div>
+          <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", maxWidth: "160px" }}>
             {playlist.name}
-          </Text>
-          <Text
-            as="div"
-            size="2"
-            color="gray"
-          >
+          </div>
+          <div style={{color: "#333"}}>
             {playlist.owner.display_name}
-          </Text>
-        </Box>
-      </Flex>
+          </div>
+        </div>
+      </CardBody>
     </Card>
   );
 }

@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
-import "@radix-ui/themes/styles.css";
+import  Providers  from "../context/RecommendationsProvider";
 import "../styles/globals.css";
-import { Theme } from "@radix-ui/themes";
-
-// import "../styles/globals.css";
-import GlobalHeader from "./components/GlobalHeader/GlobalHeader";
-import ThemeProvider from "context/ThemeProvider";
-import RecommendationsProvider from "context/RecommendationsProvider";
 
 export const metadata: Metadata = {
   title: { default: "Dashboard", template: "%s | My Website" },
@@ -24,23 +18,9 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head></head>
-      <ThemeProvider>
-        <RecommendationsProvider>
-          <body>
-            <Theme
-              id="application-root"
-              accentColor="indigo"
-              grayColor="slate"
-              appearance="dark"
-              panelBackground="translucent"
-              scaling="100%"
-              radius="large"
-            >
-              {children}
-            </Theme>
-          </body>
-        </RecommendationsProvider>
-      </ThemeProvider>
+      <body className="dark text-foreground">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

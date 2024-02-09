@@ -1,18 +1,20 @@
-@import "@radix-ui/colors/gray.css";
-@import "@radix-ui/colors/gray-dark.css";
-@import "@radix-ui/colors/black-alpha.css";
-@import "@radix-ui/colors/indigo.css";
-@import "@radix-ui/colors/mauve.css";
-@import "@radix-ui/colors/purple.css";
-@import "@radix-ui/colors/violet.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   background-color: #000;
-  min-height: 100vh; /* covers a Radix DropDownMenu bug that reduces content to trigger height */
+  min-height: 100vh;
 }
 
 body::before {
   content: "";
+  background-color: #222;
+  background-image: url("/images/AdobeStock_538830788.jpeg");
+  background-position: right bottom ;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: fixed;
   top: 0;
   left: 0;
@@ -20,40 +22,30 @@ body::before {
   right: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.05;
-  background-image: url("/images/AdobeStock_295629217.jpeg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
+  opacity: .6;
+  z-index: 1;
 }
 
-.DropdownMenuItem,
-.DropdownMenuItem a {
-  text-decoration: none;
-  color: var(--gray-12);
+.rotate-180 {
+  animation: smoothFlipUp 200ms linear;
+}
+.rotate-0 {
+  animation: smoothFlipDown 200ms linear;
 }
 
-.DropdownMenuItem a {
-  text-decoration: none;
-  color: var(--gray-12);
+@keyframes smoothFlipUp {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
 }
-
-.DropdownMenuItem a.accountMenuLink {
-  display: block;
-  padding: 6px 14px;
-  margin-left: -14px;
-  margin-right: -14px;
-}
-
-.react-dropdown-select-dropdown {
-  background: rgba(0.1, 0.1, 0.1, 0.8) !important;
-  box-shadow: none;
-}
-.react-dropdown-select-item {
-  color: rgb(255, 255, 255);
-  border-bottom: 1px solid #333;
-}
-.react-dropdown-select-item:hover {
-  color: #ffffff;
+@keyframes smoothFlipDown {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }

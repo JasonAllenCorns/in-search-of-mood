@@ -1,14 +1,18 @@
 "use client";
-import React from "react";
 import {
   Avatar,
   Button,
-  Container,
+  Divider,
+  Dropdown,
+  DropdownItem,
   DropdownMenu,
-  Flex,
-} from "@radix-ui/themes";
-import { CaretDownIcon } from "@radix-ui/react-icons";
-import Link from "next/link";
+  DropdownTrigger,
+  Navbar,
+  NavbarContent,
+} from "@nextui-org/react";
+import React, { useState } from "react";
+import { ChevronDownIcon } from '@heroicons/react/24/solid';
+
 import { SessionToken } from "types/types";
 
 interface Props {
@@ -20,72 +24,64 @@ interface Props {
 }
 
 const GlobalHeader = ({ ...props }: Props) => {
-  const spotifyUrl = props?.token?.spotifyProfileUrl;
+  const spotifyUrl = props?.token?.spotifyProfileUrl || "";
   const name = props?.user?.name || "N A";
   const image = props?.user?.image || undefined;
-
-  const initialsFallback = [
-    (name?.split(" ")[0] || "N").charAt(0),
-    (name?.split(" ")[1] || "A").charAt(0),
-  ].join("");
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <Container>
-      <Flex
-        gap="3"
-        height="9"
-        direction={"row-reverse"}
-        style={{ paddingTop: "9px", paddingBottom: "9px" }}
-      >
-        <DropdownMenu.Root>
-          <DropdownMenu.Trigger>
+    <Navbar className="max-w-7xl mx-auto" maxWidth="full">
+      <NavbarContent justify="start"></NavbarContent>
+      <NavbarContent className="hidden sm:flex gap-3">&nbsp;</NavbarContent>
+      <NavbarContent justify="end">
+        <Dropdown placement="bottom-end" isOpen={isOpen} onOpenChange={(open) => { setIsOpen(open)}}>
+          <DropdownTrigger>
             <Button
-              variant="ghost"
-              style={{ cursor: "pointer" }}
+              variant="light"  
+              radius="full"
+              size="lg"
+              endContent={<ChevronDownIcon className={`w-6 h-6 transform-gpu ${isOpen? "rotate-180": "rotate-0"}`} />}
+              className="pl-1 pr-4 justify-between"
             >
               <Avatar
-                size="3"
-                radius="full"
+                className="my-4"
+                name={name}
+                size="md"
                 src={image}
-                fallback={initialsFallback}
               />
-              <CaretDownIcon width="30" />
             </Button>
-          </DropdownMenu.Trigger>
-          <DropdownMenu.Content>
-            <DropdownMenu.Item className="DropdownMenuItem">
-              My playlists
-            </DropdownMenu.Item>
-            <DropdownMenu.Separator />
-            {spotifyUrl && (
-              <DropdownMenu.Item
-                className="DropdownMenuItem"
-                style={{ flexDirection: "column", alignItems: "stretch" }}
-              >
-                <a
-                  className="accountMenuLink"
-                  href={spotifyUrl}
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  My Spotify account
-                </a>
-              </DropdownMenu.Item>
-            )}
-            <DropdownMenu.Item
-              className="DropdownMenuItem"
-              style={{ flexDirection: "column", alignItems: "stretch" }}
+          </DropdownTrigger>
+          <DropdownMenu
+            aria-label="Profile Actions"
+            variant="flat"
+          >
+            <DropdownItem
+              key="profile"
+              className="h-14 gap-2"
             >
-              <Link
-                href="/api/auth/signin"
-                className="accountMenuLink"
-              >
-                Sign out
-              </Link>
-            </DropdownMenu.Item>
-          </DropdownMenu.Content>
-        </DropdownMenu.Root>
-      </Flex>
-    </Container>
+              <p className="font-semibold">Signed in as</p>
+              <p className="font-semibold">{name}</p>
+            </DropdownItem>
+            <DropdownItem key="divider">
+              <Divider orientation="horizontal" />
+            </DropdownItem>
+            <DropdownItem
+              key="spotifyProfile"
+              href={spotifyUrl}
+              target="_new"
+            >
+              My Profile
+            </DropdownItem>
+            <DropdownItem
+              color="danger"
+              key="signout"
+              href="/api/auth/signin"
+            >
+              Sign out
+            </DropdownItem>
+          </DropdownMenu>
+        </Dropdown>
+      </NavbarContent>
+    </Navbar>
   );
 };
 export default GlobalHeader;

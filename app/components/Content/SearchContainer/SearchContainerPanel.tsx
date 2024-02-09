@@ -1,15 +1,15 @@
-import { Container, Em, Grid, Separator } from "@radix-ui/themes";
+import { Button, Divider } from "@nextui-org/react";
 import SearchForm from "./SearchForm/SearchForm";
 
 export default async function SearchContainerPanel() {
   return (
-    <Container>
-      <Em>Find some recommendations</Em>
-      <Separator
-        my="3"
-        size="4"
-      ></Separator>
+    <div className="container mx-auto w-full">
+      <span className="italic">Find some recommendations</span>
+      <Divider className="mt-6" />
       <SearchForm />
-    </Container>
+      <div className="px-4 text-right">
+        <Button>Let's go!</Button>
+      </div>
+    </div>
   );
 }

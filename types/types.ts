@@ -86,12 +86,7 @@ export type SpotifyPlaylist = {
   },
 }
 
-
-export interface SpotifyGenre {
-  id: number;
-  value: string;
-};
-export type SpotifyGenres = SpotifyGenre[] | [];
+export type SpotifyGenres = string[] | [];
 
 export type SpotifyTrackTempo = {
   tempo: number;
