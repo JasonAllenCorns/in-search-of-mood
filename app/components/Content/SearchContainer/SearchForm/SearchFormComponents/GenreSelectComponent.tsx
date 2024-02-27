@@ -1,45 +1,49 @@
 "use client";
 
+import React, { Key } from "react";
+import { Select, SelectItem } from "@nextui-org/react";
 import {
   useRecommendationsContext,
   spotifyGenresList,
 } from "context/RecommendationsProvider";
-import { Select, SelectItem, select } from "@nextui-org/react";
 import { SpotifyGenres } from "types/types";
 
-export default function SpotifyGenreSelectComponent() {
-  const { recFormState, saveRecFormState } = useRecommendationsContext() || {};
-  const selectedGenres = recFormState?.genres || [];
-  const setSelectedGenres: (keys: any) => void = (keys) => {
-console.log('(jason.corns) --------------------------------------- start group: keys or something');
-console.log('(jason.corns) logged details from ~/Sites/in-search-of-mood/app/components/Content/SearchContainer/SearchForm/SearchFormComponents/GenreSelectComponent.tsx');
-console.log("(jason.corns) keys", keys);
-console.log('(jason.corns) ----------------------------------------- end group: keys or something');
-    // const genres = spotifyGenresList.filter((g) => {
-    //   keys && keys.has && keys.has(String(g.id))
-    // });
-    let genres: SpotifyGenres = Array.from(keys || []);
-    const cRecFormState = { ...recFormState };
-    cRecFormState.genres = genres;
-    saveRecFormState && saveRecFormState(cRecFormState);
+const SpotifyGenreSelectComponent: React.FC = () => {
+  const { recFormData, saveRecFormData, setUseGenre } =
+    useRecommendationsContext() || {};
+
+  const setSelectedGenres = (genres: Key[]) => {
+    const selectedGenres: SpotifyGenres = [];
+    genres?.map((k) => {
+      if (spotifyGenresList.includes(k.toString())) {
+        selectedGenres.push(k.toString());
+      }
+    });
+    setUseGenre?.(selectedGenres.length > 0);
+    const updatedFormState = { ...recFormData, genres: selectedGenres };
+    saveRecFormData?.(updatedFormState);
   };
+
   return (
     <Select
       label="Genres"
       selectionMode="multiple"
-      selectedKeys={recFormState?.genres || []}
+      selectedKeys={recFormData?.genres || []}
       description="Genres of music to focus the recommendations"
-      onSelectionChange={(keys) => {
-        setSelectedGenres(keys);
+      onSelectionChange={(selectedKeys) => {
+        setSelectedGenres(Array.from(selectedKeys));
       }}
     >
-      {
-        spotifyGenresList.map((genre) => (
-          <SelectItem key={genre} value={genre}>
-            {genre}
-          </SelectItem>
-        ))
-      }
+      {spotifyGenresList.map((genre: string) => (
+        <SelectItem
+          key={genre}
+          value={genre}
+        >
+          {genre}
+        </SelectItem>
+      ))}
     </Select>
   );
-}
+};
+
+export default SpotifyGenreSelectComponent;

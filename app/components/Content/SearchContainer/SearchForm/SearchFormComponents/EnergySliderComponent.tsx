@@ -1,24 +1,33 @@
+"use client";
+import React, { useState } from "react";
 import { Slider, Switch } from "@nextui-org/react";
-import { useState } from "react";
+import { useRecommendationsContext } from "context/RecommendationsProvider";
 
-type AdditionalProps = {
+type EnergySliderProps = {
   className?: string;
 };
-type ExtendedComponentProps = React.PropsWithChildren<AdditionalProps>;
 
-export default function EnergySliderComponent(props: ExtendedComponentProps) {
-  const [energyLevel, setEnergyLevel] = useState(0.4);
-  const [isSelected, setIsSelected] = useState(true);
+const EnergySliderComponent: React.FC<EnergySliderProps> = ({ className }) => {
+  const { recFormData, saveRecFormData, useEnergy, setUseEnergy } =
+    useRecommendationsContext() || {};
+  const initialEnergyLevel = recFormData?.energy || 0.4;
+  const setEnergyLevelValue = (
+    energy: number | number[] = recFormData?.energy || 0.4
+  ) => {
+    const singleEngeryValue = energy?.[0] || energy;
+    saveRecFormData?.({ energy: singleEngeryValue });
+  };
+
   return (
-    <div className={`container mx-auto ${props.className || ""}`}>
+    <div className={`container mx-auto ${className || ""}`}>
       <div className="flex flex-row gap-3">
         <Switch
           color="secondary"
-          isSelected={isSelected}
-          onValueChange={setIsSelected}
+          isSelected={useEnergy}
+          onValueChange={setUseEnergy}
         />
         <Slider
-          isDisabled={!isSelected}
+          isDisabled={!useEnergy}
           size="md"
           step={0.1}
           color="foreground"
@@ -26,27 +35,16 @@ export default function EnergySliderComponent(props: ExtendedComponentProps) {
           showSteps={true}
           maxValue={1}
           minValue={0}
-          defaultValue={energyLevel}
-          onChangeEnd={(value) => {
-            console.log("(jason.corns) Energy Value", value);
-            setEnergyLevel(parseFloat((value || "").toString()));
+          defaultValue={initialEnergyLevel}
+          onChangeEnd={(value) => setEnergyLevelValue(value)}
+          getValue={(value) => {
+            const singleSelectValue = value?.[0] || value;
+            return `${Math.floor(singleSelectValue * 11)}`;
           }}
-          getValue={(value) =>
-            `${Math.floor(parseFloat(value.toString()) * 11)}`
-          }
           marks={[
-            {
-              value: 0.1,
-              label: "Chill",
-            },
-            {
-              value: 0.5,
-              label: "Up and alive",
-            },
-            {
-              value: 0.9,
-              label: "Apoplectic",
-            },
+            { value: 0.1, label: "Chill" },
+            { value: 0.5, label: "Up and alive" },
+            { value: 0.9, label: "Apoplectic" },
           ]}
           classNames={{
             base: "max-w-md gap-3 max-w-md",
@@ -57,4 +55,6 @@ export default function EnergySliderComponent(props: ExtendedComponentProps) {
       </div>
     </div>
   );
-}
+};
+
+export default EnergySliderComponent;

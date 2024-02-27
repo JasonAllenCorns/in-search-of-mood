@@ -27,7 +27,6 @@ export default function SearchFilterPanel() {
           aria-label="Filter Options"
           selectedKey={selected}
           onSelectionChange={(selected) => {
-            console.log("(jason.corns) selected", selected);
             const selectedTabKey = (selected || "").toString()
             setSelected(selectedTabKey);
           }}

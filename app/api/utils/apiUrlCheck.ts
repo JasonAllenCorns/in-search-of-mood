@@ -16,9 +16,5 @@ const checkPlaylistUrlMatch = (fetchUrl?:string): string => {
     }
   }
   //swapped userID for 'me' primitive. No need for ID and no way to default the value
-    console.log('(jason.corns) with URL', checkPlaylistUrlMatch("https://api.spotify.com/v1/users/1251433830/playlists?offset=0&limit=20"));
-    console.log('(jason.corns) with bad params', checkPlaylistUrlMatch("https://api.spotify.com/v1/users/1251433830/playlists?offset=140000&limit=75"));
-    console.log('(jason.corns) with URL no limit', checkPlaylistUrlMatch("https://api.spotify.com/v1/users/1251433830/playlists?offset=0"));
-    console.log('(jason.corns) without URL', checkPlaylistUrlMatch());
   return `https://api.spotify.com/v1/users/me/playlists?offset=${offset}&limit=${limit}`; 
 }

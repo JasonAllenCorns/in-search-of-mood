@@ -8,7 +8,7 @@ import { SpotifyPlaylist } from "types/types";
 export default function PlaylistItem({ ...props }) {
   const playlist: SpotifyPlaylist = props?.playlist;
   const playlistAvatar: any = {
-    src: playlist.images[0].url,
+    src: playlist?.images?.[0].url,
   };
 
   return (
@@ -29,7 +29,7 @@ export default function PlaylistItem({ ...props }) {
             {playlist.name}
           </div>
           <div style={{color: "#333"}}>
-            {playlist.owner.display_name}
+            {playlist?.owner?.display_name}
           </div>
         </div>
       </CardBody>

@@ -1,34 +1,10 @@
 "use client";
 import React, { createContext, useContext, useState } from "react";
 import {
-  GetSelectedGenres,
-  RecommendationFormState,
+  RecommendationFormProvider,
   RecommendationsFormContext,
-  SetSelectedGenres,
   SpotifyGenres,
-  SpotifyTrackTempo,
 } from "types/types";
-
-const saveToLocalStorage = ({
-  currentState,
-}: {
-  currentState: RecommendationFormState;
-}) => {
-  try {
-    if (window && window.localStorage && window.localStorage.setItem) {
-      // TODO: this instance represents the third such identical check. Time for an abstract handler
-      window.localStorage.setItem(
-        "searchQuery",
-        JSON.stringify({ ...currentState })
-      );
-    }
-  } catch (e) {
-    console.error(
-      "Error persisting search state to local storage. Convenience form hydration will be lost.",
-      e?.message
-    );
-  }
-};
 
 export const spotifyGenresList: SpotifyGenres = [
   "acoustic",
@@ -168,36 +144,66 @@ export default function RecommendationsProvider({
 }: {
   children?: React.ReactNode;
 }) {
-  const [recFormState, setRecFormState] = useState<RecommendationFormState>({});
+  const [recFormData, setRecFormData] = useState<RecommendationFormProvider>(
+    {}
+  );
+  const [useArtist, setUseArtist] = useState(false);
+  const [useEnergy, setUseEnergy] = useState(false);
+  const [useGenre, setUseGenre] = useState(false);
+  const [useTempo, setUseTempo] = useState(false);
+  const [useTrack, setUseTrack] = useState(false);
 
-  // const getSelectedGenres: GetSelectedGenres = () => { return (recFormState.genres || []); }
-  const saveRecFormState = ({
+  // const getSelectedGenres: GetSelectedGenres = () => { return (recFormData.genres || []); }
+  const saveRecFormData = ({
     genres,
     tempo,
+    energy,
   }: {
     genres: SpotifyGenres;
-    tempo: SpotifyTrackTempo;
+    tempo: string | boolean;
+    energy: number;
   }) => {
-    const updatedState = { ...recFormState };
+    const updatedState = { ...recFormData };
     if (genres && Array.isArray(genres)) {
-      updatedState.genres = genres;
+      updatedState.genres = genres.filter((genre) =>
+        spotifyGenresList.includes(genre)
+      );
     }
-    if (tempo && typeof tempo === "number" && tempo >= 0 && tempo <= 1) {
+    if (typeof tempo === "string") {
       updatedState.tempo = tempo;
+    } else if (typeof tempo === "boolean") {
+      delete updatedState.tempo;
+    } // anything else, then don't touch it
+
+    if (energy && parseFloat(energy.toString())) {
+      updatedState.energy = Math.min(
+        Math.max(0, parseFloat(energy.toString())),
+        1
+      );
     }
-    setRecFormState(updatedState); // TODO: react hooks / useEffect to update local storage
+    setRecFormData(updatedState); // TODO: reacthooks / useEffect to update local storage
   };
 
   // const setSelectedGenres: SetSelectedGenres = (genres: SpotifyGenres) => {
   //   const stateSafeGenreItem = genres; // TODO: clean arg values?
-  //   saveRecFormState({ key: "genres", inputVal: stateSafeGenreItem });
+  //   saveRecFormData({ key: "genres", inputVal: stateSafeGenreItem });
   // };
 
   return (
     <RecommendationsContext.Provider
       value={{
-        recFormState,
-        saveRecFormState,
+        recFormData,
+        saveRecFormData,
+        useArtist,
+        useEnergy,
+        useGenre,
+        useTempo,
+        useTrack,
+        setUseArtist,
+        setUseEnergy,
+        setUseGenre,
+        setUseTempo,
+        setUseTrack,
       }}
     >
       {children}
@@ -205,5 +211,11 @@ export default function RecommendationsProvider({
   );
 } // Provider def
 
-export const useRecommendationsContext = () =>
-  useContext(RecommendationsContext);
+export const useRecommendationsContext = () => {
+  const context = useContext(RecommendationsContext);
+  if (context === undefined)
+    throw new Error(
+      "useRecommendationsContext must be used inside a provider only"
+    );
+  return context;
+};

@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
-import  Providers  from "../context/RecommendationsProvider";
+import { SessionProvider } from "next-auth/react"
+import  RecommendationsProviders  from "../context/RecommendationsProvider";
+
 import "../styles/globals.css";
+import { SpotifySession } from "@/types/types";
+import PlaylistProvider from "@/context/PlaylsitsProvider";
 
 export const metadata: Metadata = {
   title: { default: "Dashboard", template: "%s | My Website" },
@@ -9,17 +13,26 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  session,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode,
+  session: SpotifySession,
 }) {
   return (
     <html
+      className="dark"
       lang="en"
       suppressHydrationWarning
     >
       <head></head>
       <body className="dark text-foreground">
-        <Providers>{children}</Providers>
+        <SessionProvider session={session}>
+          <RecommendationsProviders>
+            <PlaylistProvider>
+              {children}
+            </PlaylistProvider>
+            </RecommendationsProviders>
+        </SessionProvider>
       </body>
     </html>
   );

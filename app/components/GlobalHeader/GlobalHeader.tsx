@@ -11,35 +11,50 @@ import {
   NavbarContent,
 } from "@nextui-org/react";
 import React, { useState } from "react";
-import { ChevronDownIcon } from '@heroicons/react/24/solid';
+import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
-import { SessionToken } from "types/types";
+import { SpotifyProfile } from "types/types";
 
 interface Props {
-  token: SessionToken | undefined;
   user?: {
     name?: string | undefined;
     image?: string | undefined;
+    spotifyProfile?: SpotifyProfile;
   };
 }
 
 const GlobalHeader = ({ ...props }: Props) => {
-  const spotifyUrl = props?.token?.spotifyProfileUrl || "";
+  const spotifyUrl = props?.user?.spotifyProfile?.external_urls?.spotify || "";
   const name = props?.user?.name || "N A";
   const image = props?.user?.image || undefined;
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <Navbar className="max-w-7xl mx-auto" maxWidth="full">
+    <Navbar
+      className="max-w-7xl mx-auto"
+      maxWidth="full"
+    >
       <NavbarContent justify="start"></NavbarContent>
       <NavbarContent className="hidden sm:flex gap-3">&nbsp;</NavbarContent>
       <NavbarContent justify="end">
-        <Dropdown placement="bottom-end" isOpen={isOpen} onOpenChange={(open) => { setIsOpen(open)}}>
+        <Dropdown
+          placement="bottom-end"
+          isOpen={isOpen}
+          onOpenChange={(open) => {
+            setIsOpen(open);
+          }}
+        >
           <DropdownTrigger>
             <Button
-              variant="light"  
+              variant="light"
               radius="full"
               size="lg"
-              endContent={<ChevronDownIcon className={`w-6 h-6 transform-gpu ${isOpen? "rotate-180": "rotate-0"}`} />}
+              endContent={
+                <ChevronDownIcon
+                  className={`w-6 h-6 transform-gpu ${
+                    isOpen ? "rotate-180" : "rotate-0"
+                  }`}
+                />
+              }
               className="pl-1 pr-4 justify-between"
             >
               <Avatar
@@ -57,17 +72,22 @@ const GlobalHeader = ({ ...props }: Props) => {
             <DropdownItem
               key="profile"
               className="h-14 gap-2"
+              textValue={`Signed in as ${name}`}
             >
               <p className="font-semibold">Signed in as</p>
               <p className="font-semibold">{name}</p>
             </DropdownItem>
-            <DropdownItem key="divider">
+            <DropdownItem
+              key="divider"
+              textValue="Horizontal line visually separating readonly name above from actionable links below"
+            >
               <Divider orientation="horizontal" />
             </DropdownItem>
             <DropdownItem
               key="spotifyProfile"
               href={spotifyUrl}
               target="_new"
+              textValue="Link to your Spotify profoile"
             >
               My Profile
             </DropdownItem>
@@ -75,6 +95,7 @@ const GlobalHeader = ({ ...props }: Props) => {
               color="danger"
               key="signout"
               href="/api/auth/signin"
+              textValue="Link to signout of this application"
             >
               Sign out
             </DropdownItem>
