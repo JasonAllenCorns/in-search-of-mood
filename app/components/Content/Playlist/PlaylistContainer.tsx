@@ -1,7 +1,7 @@
 import PlaylistItem from "./PlaylistItem";
 import { PlaylistListControls } from "./PlaylistListControls";
 import { Divider } from "@nextui-org/react";
-import { SpotifyPlaylist } from "@/types/types";
+import { SpotifyPlaylist, SpotifySession } from "@/types/types";
 import { auth } from "@/auth";
 import { processAccessToken } from "@/app/api/utils/getAccessToken";
 
@@ -11,17 +11,17 @@ export default async function PlaylistContainer() {
   let showingHowMany = 0;
   let playlists = [];
 
-  const session = await auth()
+  const session = await auth() as SpotifySession;
   if (session) {
-    const { accessToken, ok, message } = await processAccessToken(session);
+    const { access_token, ok, message } = await processAccessToken(session);
     // Do something with the session
     if (ok) {
       // session contains all we need, since we're calling the 'me' routes
       // quick validation of configs
-      if (process && process.env && process.env.SPOTIFY_DOMAIN && accessToken) {
+      if (process && process.env && process.env.SPOTIFY_DOMAIN && access_token) {
         const fetchUrl = new URL(`${process.env.SPOTIFY_DOMAIN}/v1/me/playlists`);
         const headers = new Headers();
-        headers.set('Authorization', `Bearer ${accessToken}`);
+        headers.set('Authorization', `Bearer ${access_token}`);
         const res = await fetch(fetchUrl, { headers });
 
         if (res.ok) {

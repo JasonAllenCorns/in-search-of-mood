@@ -17,15 +17,28 @@ import { SpotifyProfile } from "types/types";
 
 interface Props {
   user?: {
-    name?: string | undefined;
-    image?: string | undefined;
-    spotifyProfile?: SpotifyProfile;
+    profile?: SpotifyProfile;
   };
 }
+/**
+ * display_name: 'Jason A. Corns',
+ * external_urls: [Object],
+ * href: 'https://api.spotify.com/v1/users/1251433830',
+ * id: '1251433830',
+ * images: [Array],
+ * type: 'user',
+ * uri: 'spotify:user:1251433830',
+ * followers: [Object],
+ * email: 'jason.a.corns@gmail.com'
 
+ */
 const GlobalHeader = ({ ...props }: Props) => {
-  const spotifyUrl = props?.user?.spotifyProfile?.external_urls?.spotify || "";
-  const name = props?.user?.name || "N A";
+  console.log('(jason.corns) --------------------------------------- start group: header props');
+  console.log('(jason.corns) logged details from ~/Sites/in-search-of-mood/app/components/GlobalHeader/GlobalHeader.tsx');
+  console.log("(jason.corns) props.user", props.user);
+  console.log('(jason.corns) ----------------------------------------- end group: header props');
+  const spotifyUrl = props?.user?.profile?.external_urls?.spotify || "";
+  const name = props?.user?.profile?.display_name || "N A";
   const image = props?.user?.image || undefined;
   const [isOpen, setIsOpen] = useState(false);
   return (

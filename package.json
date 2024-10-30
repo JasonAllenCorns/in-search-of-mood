@@ -15,7 +15,6 @@
     "autoprefixer": "^10.4.17",
     "axios": "^1.6.5",
     "framer-motion": "^11.0.3",
-    "i": "^0.3.7",
     "install": "^0.13.0",
     "next": "^14.0.4",
     "next-auth": "^5.0.0-beta.13",

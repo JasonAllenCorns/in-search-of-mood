@@ -1,7 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import GlobalHeader from "./components/GlobalHeader/GlobalHeader";
-import { SpotifySession } from "types/types";
 import StaticPanel from "./components/Content/Sidebar/StaticPanel";
 import SearchContainerPanel from "./components/Content/SearchContainer/SearchContainerPanel";
 import { Divider } from "@nextui-org/react";
@@ -17,7 +16,12 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function Home() {
-  const session: SpotifySession | null | undefined = await auth();
+  const session = await auth();
+
+  console.log('(jason.corns) --------------------------------------- start group: ewfsdfcxz');
+  console.log('(jason.corns) logged details from ~/Sites/in-search-of-mood/app/page.tsx');
+  console.log("(jason.corns) session", session);
+  console.log('(jason.corns) ----------------------------------------- end group: ewfsdfcxz');
 
   if (session) {
     const { user } = session;

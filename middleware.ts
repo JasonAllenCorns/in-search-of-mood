@@ -1,4 +1,4 @@
-import { auth } from "./auth"
+export { auth as middleware } from "./auth"
 
 export const config = {
   matcher: [
@@ -11,6 +11,3 @@ export const config = {
     },
   ],
 };
-
-export default auth((req) => {
-});

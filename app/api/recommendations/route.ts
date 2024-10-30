@@ -5,11 +5,11 @@ import { NextRequest } from "next/server";
 export async function GET(req: NextRequest) {
 
   const headersList = headers();
-  const accessToken = headersList.get("accessToken");
-  const refreshToken = headersList.get("refreshToken");
+  const access_token = headersList.get("access_token");
+  const refresh_token = headersList.get("refresh_token");
   const accessTokenExpiresAt = headersList.get("accessTokenExpiresAt");
 
-  if (accessToken) {
+  if (access_token) {
     const { searchParams } = new URL(req.url);
     const genres = searchParams.get('genres');
     const tempo = searchParams.get('tempo');
@@ -30,7 +30,7 @@ export async function GET(req: NextRequest) {
     const res = await fetch(fetchUrl, {
       method: 'GET',
       headers: {
-        'Authorization': `Bearer ${accessToken}`
+        'Authorization': `Bearer ${access_token}`
       }
     });
     const data = await res.json()

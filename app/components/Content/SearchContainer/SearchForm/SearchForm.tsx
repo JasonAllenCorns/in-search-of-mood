@@ -10,21 +10,8 @@ import { useMemo } from "react";
 export default function SearchForm() {
   const { recFormData, useArtist, useEnergy, useGenre, useTempo, useTrack } = useRecommendationsContext() || {};
   const buttonClickHandler : ()=>void = () => {
-    // console.log('(jason.corns) --------------------------------------- start group: useRecommendationsContext.recFormData');
-    // console.log('(jason.corns) logged details from ~/Sites/in-search-of-mood/app/components/Content/SearchContainer/SearchForm/SearchForm.tsx');
-    // console.log("(jason.corns) useRecommendationsContext.recFormData", recFormData);
-    // console.log('(jason.corns) ----------------------------------------- end group: useRecommendationsContext.recFormData');
   }
   const stateClickHandler : ()=>void = () => {
-
-    // console.log('(jason.corns) --------------------------------------- start group: useRecommendationsContext.recFormData');
-    // console.log('(jason.corns) logged details from ~/Sites/in-search-of-mood/app/components/Content/SearchContainer/SearchForm/SearchForm.tsx');
-    // console.log("(jason.corns) useArtist", useArtist);
-    // console.log("(jason.corns) useEnergy", useEnergy);
-    // console.log("(jason.corns) useGenre", useGenre);
-    // console.log("(jason.corns) useTempo", useTempo);
-    // console.log("(jason.corns) useTrack", useTrack);
-    // console.log('(jason.corns) ----------------------------------------- end group: useRecommendationsContext.recFormData');
   }
   const isDisabled = useMemo<boolean | undefined>(() => {
     /**
@@ -52,7 +39,7 @@ export default function SearchForm() {
         <Button
           isDisabled={isDisabled}
           onClick={buttonClickHandler}
-        >Let's go!</Button>
+        >Let`&#39;s go!</Button>
       </div>
     </section>
   );

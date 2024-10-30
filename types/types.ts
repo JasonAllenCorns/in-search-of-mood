@@ -1,35 +1,24 @@
 import { Session, type Profile, User } from 'next-auth';
-import { JWT } from 'next-auth/jwt';
-
 export type SpotifyProfile = Profile & {
   external_urls?: {
     spotify?: string
   },
   "name"?: string,
   picture?: string,
+  href?: string,
   sub?: string,
   uri?: string,
-  href?: string,
   spotifyProfileUrl?: string,
 }
-export interface SpotifyUser extends User {
-  uri?: string,
-  href?: string,
-  profile?: SpotifyProfile
-}
 
-export type SessionToken = JWT & {
-  accessToken?: string,
-  accessTokenExpiresAt?: string | number,
-  refreshToken?: string,
-  profile?: SpotifyProfile,
+export type SpotifySessionAuthUser = User & {
+  access_token ?: string;
+  refresh_token?: string;
+  expires_at?: string | number;
 }
 
 export interface SpotifySession extends Session {
-  token?: SessionToken;
-  accessToken?: string;
-  refreshToken?: string;
-  accessTokenExpiresAt?: string | number;
+  user: SpotifySessionAuthUser;
   expires: string;
 }
 
