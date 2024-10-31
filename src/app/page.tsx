@@ -1,11 +1,5 @@
-import { encrypt } from '@vercel/flags';
-import { FlagValues, type FlagValuesType } from '@vercel/flags/react';
+import { FlagValues } from '@vercel/flags/react';
 import Image from 'next/image';
-
-async function ConfidentialFlagValues({ values }: { values: FlagValuesType }) {
-  const encryptedFlagValues = await encrypt(values);
-  return <FlagValues values={encryptedFlagValues} />;
-}
 
 export default function Home() {
   return (
