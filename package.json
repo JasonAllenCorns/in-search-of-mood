@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/flags": "^2.6.2",
     "@vercel/speed-insights": "^1.0.14",
+    "@vercel/toolbar": "^0.1.22",
     "next": "15.0.2",
     "react": "^18",
     "react-dom": "^18"
