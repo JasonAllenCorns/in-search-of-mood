@@ -4,7 +4,10 @@
   "description": "Spotify interface to search for tracks by mood, tempo, instrumentality, and further meta",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,19 @@
   "bugs": {
     "url": "https://github.com/JasonAllenCorns/in-search-of-mood/issues"
   },
-  "homepage": "https://github.com/JasonAllenCorns/in-search-of-mood#readme"
+  "homepage": "https://github.com/JasonAllenCorns/in-search-of-mood#readme",
+  "dependencies": {
+    "next": "^15.1.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.5",
+    "@eslint/eslintrc": "^3"
+  }
 }
