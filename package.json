@@ -1,0 +1,24 @@
+{
+  "name": "in-search-of-mood",
+  "version": "2.0.0",
+  "description": "Spotify interface to search for tracks by mood, tempo, instrumentality, and further meta",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonAllenCorns/in-search-of-mood.git"
+  },
+  "keywords": [
+    "spotify",
+    "nextjs",
+    "react"
+  ],
+  "author": "https://github.com/JasonAllenCorns",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasonAllenCorns/in-search-of-mood/issues"
+  },
+  "homepage": "https://github.com/JasonAllenCorns/in-search-of-mood#readme"
+}
