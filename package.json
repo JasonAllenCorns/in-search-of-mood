@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/JasonAllenCorns/in-search-of-mood#readme",
   "dependencies": {
-    "next": "^15.4.4",
+    "next": "^15.4.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
